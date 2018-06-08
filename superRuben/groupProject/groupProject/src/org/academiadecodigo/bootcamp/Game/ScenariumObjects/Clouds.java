@@ -26,21 +26,23 @@ public class Clouds extends ScenariumObject {
         cloudImage.setColor(Color.WHITE);
     }
 
-@Override
+    @Override
     public void move() {
 
-        if (this.cloudImage.getX() >= -120) {
             this.cloudImage.translate(-10, 0);
             grid.getGridBorder().delete();
             grid.getGridBorder().fill();
 
+        if (this.cloudImage.getX() <= -120) {
+
+            this.cloudImage.delete();
+            this.cloudImage.translate(720, 0);
+            this.cloudImage.fill();
+            grid.getScorePanel().delete();
+            grid.getScorePanel().fill();
         }
-        this.cloudImage.delete();
-        this.cloudImage.translate(720, 0);
-        this.cloudImage.fill();
-        grid.getScorePanel().delete();
-        grid.getScorePanel().fill();
     }
+
     public void pause() {
         try {
             Thread.sleep(200);

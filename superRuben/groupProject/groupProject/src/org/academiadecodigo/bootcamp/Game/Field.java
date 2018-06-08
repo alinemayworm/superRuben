@@ -8,28 +8,28 @@ public class Field {
 
     public static final int PADDING = 10;
 
-    private Rectangle grid;
+    private Rectangle field;
 
     private Rectangle scorePanel;
     private Rectangle road;
 
-    private Rectangle gridBorder;
+    private Rectangle fieldBorder;
 
 
     public Field(int width, int height) {
 
-        grid = new Rectangle(PADDING, PADDING, width , height);
-        grid.fill();
-        grid.setColor(Color.CYAN);
+        field = new Rectangle(PADDING, PADDING, width , height);
+        field.fill();
+        field.setColor(Color.CYAN);
 
         scorePanel = new Rectangle(610,10,120,600);
 
-        gridBorder = new Rectangle(0,0,10,610);
-        gridBorder.setColor(Color.WHITE);
+        fieldBorder = new Rectangle(0,0,10,610);
+        fieldBorder.setColor(Color.WHITE);
 
         scorePanel.fill();
         scorePanel.setColor(Color.RED);
-        https://github.com/alinemayworm/superRuben.git
+
         road = new Rectangle(10,490,600,120);
         road.fill();
         road.setColor(Color.GRAY);
@@ -38,13 +38,13 @@ public class Field {
 
     public int getX() {
 
-        return grid.getX();
+        return field.getX();
     }
 
 
     public int getY() {
 
-        return grid.getY();
+        return field.getY();
     }
 
 
@@ -58,8 +58,8 @@ public class Field {
         return scorePanel;
     }
 
-    public Rectangle getGridBorder(){
-        return gridBorder;
+    public Rectangle getfieldBorder(){
+        return fieldBorder;
     }
 
 }

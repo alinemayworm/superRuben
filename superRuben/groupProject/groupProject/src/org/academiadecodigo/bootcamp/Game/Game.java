@@ -13,7 +13,16 @@ public class Game extends GameKeyboard {
     private Collidables[] collidables;
 
     private int delay;
-    private ScenariumObject[] objects = {new Mountains(120, 240, grid), new Mountains(0, 240, this.grid)};
+    private ScenariumObject[] objects = {
+
+            new Mountains(0, 240, grid),
+            new Mountains(120, 240, this.grid),
+            new Mountains(240,240,this.grid),
+            new Mountains(360, 240, grid),
+            new Mountains(480, 240, this.grid),
+            new Mountains(600,240,this.grid),
+
+            new Clouds(240, 60, grid)};
 
     private Player player;
 
@@ -28,21 +37,23 @@ public class Game extends GameKeyboard {
     public void init() {
 
 
-        Clouds cloud2 = new Clouds(240, 60, grid);
+
 
 
     }
 
     public void start() {
 
-        while (true) {
+        while(true) {
+
 
             pause();
 
-            objects[0].move();
+            moveAll();
 
         }
     }
+
 
     public void pause() {
 
@@ -54,12 +65,15 @@ public class Game extends GameKeyboard {
     }
 
     public void moveAll() {
-        if (objects[0].getRec().getX() > -120) {
-            objects[0].move();
-            pause();
-        }
+
+        for (ScenariumObject s : objects){
+
+        s.move();
 
     }
+
+}
+
 }
 
 
