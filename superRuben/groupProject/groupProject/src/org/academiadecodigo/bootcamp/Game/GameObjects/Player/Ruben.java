@@ -35,7 +35,7 @@ public class Ruben implements Movable {
 
     public void jump() {
 
-        if(count < 3) {
+        if(count < 4) {
             this.playerImage.delete();
             this.playerImage.translate(0, -20);
             this.playerImage.fill();
@@ -49,7 +49,7 @@ public class Ruben implements Movable {
         count++;
 
 
-        if(count >= 6 ){
+        if(count >= 8 ){
             count = 0;
             setJumping(false);
         }
@@ -63,7 +63,6 @@ public class Ruben implements Movable {
 
         if (jumping) {
             jump();
-            setJumping(false);
 
         } else {
             walk();

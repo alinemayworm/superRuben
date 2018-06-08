@@ -49,9 +49,6 @@ public class GameKeyboard implements KeyboardHandler {
         eventStopDown.setKeyboardEventType(KeyboardEventType.KEY_RELEASED);
         k.addEventListener(eventStopDown);
 
-
-
-
     }
 
     @Override

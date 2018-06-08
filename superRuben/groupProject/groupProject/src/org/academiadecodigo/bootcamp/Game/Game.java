@@ -55,6 +55,7 @@ public class Game {
 
             pause();
             moveAll();
+            ruben.move();
 
         }
     }
@@ -77,7 +78,7 @@ public class Game {
 
         }
 
-        ruben.move();
+
 
     }
 
