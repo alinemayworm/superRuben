@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.Game;
+package org.academiadecodigo.bootcamp.Game.GameObjects;
 
 public interface Movable {
 

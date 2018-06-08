@@ -1,6 +1,6 @@
-package org.academiadecodigo.bootcamp.Game.Collidables;
+package org.academiadecodigo.bootcamp.Game.GameObjects.Collidables;
 
-import org.academiadecodigo.bootcamp.Game.Movable;
+import org.academiadecodigo.bootcamp.Game.GameObjects.Movable;
 import org.academiadecodigo.bootcamp.Game.Field;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 

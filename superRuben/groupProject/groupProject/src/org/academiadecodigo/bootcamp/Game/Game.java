@@ -1,30 +1,37 @@
 package org.academiadecodigo.bootcamp.Game;
 
-import org.academiadecodigo.bootcamp.Game.Collidables.Collidables;
-import org.academiadecodigo.bootcamp.Game.ScenariumObjects.Clouds;
-import org.academiadecodigo.bootcamp.Game.ScenariumObjects.Mountains;
-import org.academiadecodigo.bootcamp.Game.ScenariumObjects.ScenariumObject;
+import org.academiadecodigo.bootcamp.Game.GameObjects.Collidables.Collidables;
+import org.academiadecodigo.bootcamp.Game.GameObjects.Player.Ruben;
+import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.Clouds;
+import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.Mountains;
+import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.ScenariumObject;
+import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 
-public class Game extends GameKeyboard {
+public class Game {
 
-    private Field grid = new Field(720, 600);
+    private Field grid = new Field();
 
+    private GameKeyboard keyboard;
 
     private Collidables[] collidables;
 
     private int delay;
+
+    private Ruben ruben;
+
+    private boolean gameOn;
+
     private ScenariumObject[] objects = {
 
-            new Mountains(0, 240, grid),
+
+            new Mountains(0, 240, this.grid),
             new Mountains(120, 240, this.grid),
-            new Mountains(240,240,this.grid),
-            new Mountains(360, 240, grid),
+            new Mountains(240, 240, this.grid),
+            new Mountains(360, 240, this.grid),
             new Mountains(480, 240, this.grid),
-            new Mountains(600,240,this.grid),
+            new Mountains(600, 240, this.grid),
+            new Clouds(240, 60, this.grid)};
 
-            new Clouds(240, 60, grid)};
-
-    private Player player;
 
     public Game(int delay) {
 
@@ -33,22 +40,20 @@ public class Game extends GameKeyboard {
 
     }
 
-
     public void init() {
 
-
-
-
+        grid.getScorePanel().show();
+        ruben = new Ruben(60, 420, grid);
+        keyboard = new GameKeyboard(ruben,this);
+        keyboard.controls();
 
     }
 
     public void start() {
 
-        while(true) {
-
+        while (true) {
 
             pause();
-
             moveAll();
 
         }
@@ -66,15 +71,27 @@ public class Game extends GameKeyboard {
 
     public void moveAll() {
 
-        for (ScenariumObject s : objects){
+        for (ScenariumObject s : objects) {
 
-        s.move();
+            s.move();
+
+        }
+
+        ruben.move();
 
     }
 
+    public boolean isGameOn() {
+        return gameOn;
+    }
+
+    public void setGameOn(boolean on){
+        this.gameOn = on;
+    }
 }
 
-}
+
+
 
 
 

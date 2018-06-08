@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.Game.ScenariumObjects;
+package org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects;
 
 import org.academiadecodigo.bootcamp.Game.Field;
 
@@ -30,16 +30,16 @@ public class Clouds extends ScenariumObject {
     public void move() {
 
             this.cloudImage.translate(-10, 0);
-            grid.getGridBorder().delete();
-            grid.getGridBorder().fill();
+            grid.getfieldBorder().delete();
+            grid.getfieldBorder().fill();
 
         if (this.cloudImage.getX() <= -120) {
 
             this.cloudImage.delete();
             this.cloudImage.translate(720, 0);
             this.cloudImage.fill();
-            grid.getScorePanel().delete();
-            grid.getScorePanel().fill();
+            grid.getScorePanel().hide();
+            grid.getScorePanel().show();
         }
     }
 

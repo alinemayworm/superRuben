@@ -4,31 +4,31 @@ package org.academiadecodigo.bootcamp.Game;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
+
+
 public class Field {
 
     public static final int PADDING = 10;
-
     private Rectangle field;
-
-    private Rectangle scorePanel;
+    private ScorePanel scorePanel;
     private Rectangle road;
-
     private Rectangle fieldBorder;
 
+    /**
+     * Creates new field;
+     */
+    public Field() {
 
-    public Field(int width, int height) {
-
-        field = new Rectangle(PADDING, PADDING, width , height);
+        field = new Rectangle(PADDING, PADDING, 720 , 600);
         field.fill();
         field.setColor(Color.CYAN);
 
-        scorePanel = new Rectangle(610,10,120,600);
 
-        fieldBorder = new Rectangle(0,0,10,610);
+        fieldBorder = new Rectangle(0,0,PADDING,610);
         fieldBorder.setColor(Color.WHITE);
 
-        scorePanel.fill();
-        scorePanel.setColor(Color.RED);
+        scorePanel = new ScorePanel(this);
+        scorePanel.show();
 
         road = new Rectangle(10,490,600,120);
         road.fill();
@@ -36,25 +36,11 @@ public class Field {
 
     }
 
-    public int getX() {
-
-        return field.getX();
-    }
-
-
-    public int getY() {
-
-        return field.getY();
-    }
-
-
-
-    public int getPadding() {
-
-        return PADDING;
-    }
-
-    public Rectangle getScorePanel(){
+    /**
+     *
+     * @return
+     */
+    public ScorePanel getScorePanel(){
         return scorePanel;
     }
 

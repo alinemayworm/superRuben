@@ -1,10 +1,10 @@
-package org.academiadecodigo.bootcamp.Game.ScenariumObjects;
+package org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects;
 
 import org.academiadecodigo.bootcamp.Game.Field;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
-public class RoadStripes extends ScenariumObject {
+public class RoadStripes{ //extends ScenariumObject {
 
     private int initialX;
     private int initialY;
@@ -24,7 +24,8 @@ public class RoadStripes extends ScenariumObject {
         stripeImage.fill();
         stripeImage.setColor(Color.YELLOW);
     }
-    @Override
+
+    //@Override
     public void move() {
         System.out.println("move");
     }
