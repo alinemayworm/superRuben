@@ -62,6 +62,9 @@ public class Ruben implements Movable {
     public void move() {
 
         if (jumping) {
+            playerImage.delete();
+            playerImage.setColor(Color.WHITE);
+            playerImage.fill();
             jump();
 
         } else {
