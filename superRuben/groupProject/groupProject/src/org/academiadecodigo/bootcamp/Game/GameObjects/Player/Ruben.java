@@ -11,6 +11,7 @@ public class Ruben implements Movable {
     private boolean down;
     private boolean dead;
 
+    private int count = 0;
     private int health;
     private int sobriety;
     private Field field;
@@ -34,29 +35,26 @@ public class Ruben implements Movable {
 
     public void jump() {
 
-        this.playerImage.delete();
-        this.playerImage.translate(0, -20);
-        this.playerImage.fill();
-        pause();
-        this.playerImage.delete();
-        this.playerImage.translate(0, -20);
-        this.playerImage.fill();
-        pause();
-        this.playerImage.delete();
-        this.playerImage.translate(0, -20);
-        this.playerImage.fill();
-        pause();
+        if(count < 3) {
+            this.playerImage.delete();
+            this.playerImage.translate(0, -20);
+            this.playerImage.fill();
+            count++;
+           return;
+        }
+
         this.playerImage.delete();
         this.playerImage.translate(0, 20);
         this.playerImage.fill();
-        pause();
-        this.playerImage.delete();
-        this.playerImage.translate(0, 20);
-        this.playerImage.fill();
-        pause();
-        this.playerImage.delete();
-        this.playerImage.translate(0, 20);
-        this.playerImage.fill();
+        count++;
+
+
+        if(count >= 6 ){
+            count = 0;
+            setJumping(false);
+        }
+
+
     }
 
 
