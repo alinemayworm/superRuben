@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f3b4684f-a2d9-4c79-a182-ec9931bb362a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
+=======
+    <list default="true" id="e440f3e3-2031-4dc7-aa2e-c59c8ef51d71" name="Default" comment="" />
+>>>>>>> player
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,6 +14,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="groupProject.iml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/superRuben/groupProject/groupProject/groupProject.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+>>>>>>> player
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
@@ -29,13 +52,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
+=======
+>>>>>>> player
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="superRuben" type="b2602c69:ProjectViewProjectNode" />
+<<<<<<< HEAD
               <item name="groupProject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -62,17 +89,55 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="bootcamp" type="462c0819:PsiDirectoryNode" />
               <item name="grid" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="superRuben" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="superRuben" type="b2602c69:ProjectViewProjectNode" />
+              <item name="superRuben" type="462c0819:PsiDirectoryNode" />
+              <item name="superRuben" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="superRuben" type="b2602c69:ProjectViewProjectNode" />
+              <item name="superRuben" type="462c0819:PsiDirectoryNode" />
+              <item name="superRuben" type="462c0819:PsiDirectoryNode" />
+              <item name="groupProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="superRuben" type="b2602c69:ProjectViewProjectNode" />
+              <item name="superRuben" type="462c0819:PsiDirectoryNode" />
+              <item name="superRuben" type="462c0819:PsiDirectoryNode" />
+              <item name="groupProject" type="462c0819:PsiDirectoryNode" />
+              <item name="groupProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="superRuben" type="b2602c69:ProjectViewProjectNode" />
+              <item name="superRuben" type="462c0819:PsiDirectoryNode" />
+              <item name="superRuben" type="462c0819:PsiDirectoryNode" />
+              <item name="groupProject" type="462c0819:PsiDirectoryNode" />
+              <item name="groupProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+>>>>>>> player
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+>>>>>>> player
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> player
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -137,17 +202,30 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="f3b4684f-a2d9-4c79-a182-ec9931bb362a" name="Default" comment="" />
       <created>1528376136030</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528376136030</updated>
       <workItem from="1528376140688" duration="1574000" />
+=======
+      <changelist id="e440f3e3-2031-4dc7-aa2e-c59c8ef51d71" name="Default" comment="" />
+      <created>1528379103182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1528379103182</updated>
+      <workItem from="1528379104553" duration="83000" />
+>>>>>>> player
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="1574000" />
+=======
+    <option name="totallyTimeSpent" value="83000" />
+>>>>>>> player
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1849" height="977" extended-state="0" />
@@ -161,7 +239,11 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+=======
+      <window_info anchor="bottom" id="Version Control" />
+>>>>>>> player
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
@@ -187,6 +269,18 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/superRuben/groupProject/groupProject/groupProject.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+>>>>>>> player
   <component name="masterDetails">
     <states>
       <state key="ProjectJDKs.UI">
