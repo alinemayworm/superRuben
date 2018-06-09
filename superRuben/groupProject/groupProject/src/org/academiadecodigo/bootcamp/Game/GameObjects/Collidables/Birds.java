@@ -9,7 +9,7 @@ public class Birds extends Collidables {
     private Rectangle birdImage;
     private Field grid;
     private boolean crashed;
-    private boolean moving;
+
 
 
     public Birds(int x, int y, Field grid) {
@@ -22,20 +22,28 @@ public class Birds extends Collidables {
 
     public void move() {
 
-        if (!crashed && moving) {
-            birdImage.translate(-15, 0);
+        if (isCurrent()) {
+            birdImage.delete();
+            birdImage.translate(-30, 0);
+            birdImage.fill();
             grid.getfieldBorder().delete();
             grid.getfieldBorder().fill();
+            grid.getScorePanel().hide();
+            grid.getScorePanel().show();
 
         }
 
-        if (birdImage.getX() <= 60) {
+        if (birdImage.getX() <= -60) {
+            double i = birdImage.getX();
             birdImage.delete();
-            birdImage.translate(660, 0);
+            birdImage.translate(-i + 610,0);
             birdImage.fill();
-            moving = false;
+            grid.getScorePanel().hide();
+            grid.getScorePanel().show();
+            setCurrent(false);
 
         }
 
     }
+
 }

@@ -9,7 +9,7 @@ public class Beers extends Collidables {
     private Rectangle beerImage;
     private Field grid;
     private boolean crashed;
-    private boolean moving;
+
 
 
     public Beers(int x, int y, Field grid) {
@@ -23,18 +23,25 @@ public class Beers extends Collidables {
     @Override
     public void move() {
 
-        if(!crashed && moving) {
-            beerImage.translate(-15, 0);
+        if(isCurrent()) {
+            beerImage.delete();
+            beerImage.translate(-20, 0);
+            beerImage.fill();
             grid.getfieldBorder().delete();
             grid.getfieldBorder().fill();
+            grid.getScorePanel().hide();
+            grid.getScorePanel().show();
 
         }
 
-        if(beerImage.getX() <= 60) {
+        if(beerImage.getX() <= -60) {
+            double i = beerImage.getX();
             beerImage.delete();
-            beerImage.translate(660, 0);
+            beerImage.translate(-i + 610, 0);
             beerImage.fill();
-            moving = false;
+            grid.getScorePanel().hide();
+            grid.getScorePanel().show();
+            setCurrent(false);
 
         }
 

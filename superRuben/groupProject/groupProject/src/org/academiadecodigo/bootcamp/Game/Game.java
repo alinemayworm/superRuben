@@ -9,7 +9,6 @@ import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.Mountains
 import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.RoadStripes;
 import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.ScenariumObject;
 
-
 public class Game {
 
     private Field grid = new Field();
@@ -24,14 +23,17 @@ public class Game {
 
     private Collidables currentCollidable;
 
+    Collidables bird = new Birds(600, 380, grid);
+    Collidables beer = new Beers(600, 480, grid);
+
     public void init() {
 
         grid.getScorePanel().show();
         ruben = new Ruben(grid);
         keyboard = new GameKeyboard(ruben, this);
         keyboard.controls();
+        generateCurrentCollidable();
     }
-
 
     private ScenariumObject[] objects = {
 
@@ -58,7 +60,7 @@ public class Game {
             pause();
             moveAll();
             ruben.move();
-            currentCollidable.move();
+
 
         }
     }
@@ -80,23 +82,27 @@ public class Game {
             s.move();
 
         }
+        if(currentCollidable.isCurrent()) {
+            currentCollidable.move();
+        } else {
+            generateCurrentCollidable();
+        }
 
     }
 
     public void generateCurrentCollidable() {
-
-        Collidables bird = new Birds(600, 380, grid);
-        Collidables beer = new Beers(600, 480, grid);
 
         int random = (int) (Math.random()*2);
 
         switch (random){
             case 0:
                 this.currentCollidable = bird;
+                currentCollidable.setCurrent(true);
                 break;
 
             case 1:
                 this.currentCollidable = beer;
+                currentCollidable.setCurrent(true);
                 break;
         }
     }
