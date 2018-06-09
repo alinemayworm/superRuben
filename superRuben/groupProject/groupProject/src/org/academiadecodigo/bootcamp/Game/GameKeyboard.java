@@ -39,16 +39,6 @@ public class GameKeyboard implements KeyboardHandler {
         eventStart.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
         k.addEventListener(eventStart);
 
-        KeyboardEvent eventStopJump = new KeyboardEvent();
-        eventStopJump.setKey(KeyboardEvent.KEY_UP);
-        eventStopJump.setKeyboardEventType(KeyboardEventType.KEY_RELEASED);
-        k.addEventListener(eventStopJump);
-
-        KeyboardEvent eventStopDown = new KeyboardEvent();
-        eventStopDown.setKey(KeyboardEvent.KEY_DOWN);
-        eventStopDown.setKeyboardEventType(KeyboardEventType.KEY_RELEASED);
-        k.addEventListener(eventStopDown);
-
     }
 
     @Override

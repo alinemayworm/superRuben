@@ -4,8 +4,6 @@ package org.academiadecodigo.bootcamp.Game;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
-
-
 public class Field {
 
     public static final int PADDING = 10;
@@ -27,7 +25,7 @@ public class Field {
         fieldBorder = new Rectangle(0,0,PADDING,610);
         fieldBorder.setColor(Color.WHITE);
 
-        scorePanel = new ScorePanel(this);
+        scorePanel = new ScorePanel();
         scorePanel.show();
 
         road = new Rectangle(10,490,600,120);

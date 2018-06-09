@@ -7,13 +7,5 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public abstract class ScenariumObject implements Movable {
 
-    public Picture pic;
-    private Field grid;
-
-
-
-    public void move(){
-
-    }
-
+    public abstract void move();
 }

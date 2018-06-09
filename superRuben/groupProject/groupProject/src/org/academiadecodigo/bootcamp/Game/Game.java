@@ -5,7 +5,7 @@ import org.academiadecodigo.bootcamp.Game.GameObjects.Player.Ruben;
 import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.Clouds;
 import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.Mountains;
 import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.ScenariumObject;
-import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
+
 
 public class Game {
 
@@ -15,11 +15,20 @@ public class Game {
 
     private Collidables[] collidables;
 
-    private int delay;
+    private int delay = 300;
 
     private Ruben ruben;
 
     private boolean gameOn;
+
+    public void init() {
+
+        grid.getScorePanel().show();
+        ruben = new Ruben(60, 420, grid);
+        keyboard = new GameKeyboard(ruben, this);
+        keyboard.controls();
+    }
+
 
     private ScenariumObject[] objects = {
 
@@ -32,22 +41,6 @@ public class Game {
             new Mountains(600, 240, this.grid),
             new Clouds(240, 60, this.grid)};
 
-
-    public Game(int delay) {
-
-        this.delay = delay;
-
-
-    }
-
-    public void init() {
-
-        grid.getScorePanel().show();
-        ruben = new Ruben(60, 420, grid);
-        keyboard = new GameKeyboard(ruben,this);
-        keyboard.controls();
-
-    }
 
     public void start() {
 
@@ -79,14 +72,13 @@ public class Game {
         }
 
 
-
     }
 
     public boolean isGameOn() {
         return gameOn;
     }
 
-    public void setGameOn(boolean on){
+    public void setGameOn(boolean on) {
         this.gameOn = on;
     }
 }

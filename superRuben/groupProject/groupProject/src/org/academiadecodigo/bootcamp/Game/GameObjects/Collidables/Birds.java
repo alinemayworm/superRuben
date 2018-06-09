@@ -9,16 +9,10 @@ public class Birds extends Collidables {
     private Rectangle birdImage;
     private Field grid;
 
-    private int initialX;
-    private int initialY;
 
 
     public Birds(int x, int y, Field grid) {
         this.grid = grid;
-
-
-        this.initialX = x;
-        this.initialY = y;
 
         birdImage = new Rectangle(10 + x, 10 + y, 60, 60);
         birdImage.fill();

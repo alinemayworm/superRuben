@@ -1,7 +1,5 @@
 package org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects;
-
 import org.academiadecodigo.bootcamp.Game.Field;
-
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
@@ -10,20 +8,13 @@ public class Clouds extends ScenariumObject {
     private Rectangle cloudImage;
     private Field grid;
 
-    private int initialX;
-    private int initialY;
-
-
     public Clouds(int x, int y, Field grid) {
+
         this.grid = grid;
 
-
-        this.initialX = x;
-        this.initialY = y;
-
         cloudImage = new Rectangle(10 + x, 10 + y, 120, 60);
-        cloudImage.fill();
         cloudImage.setColor(Color.WHITE);
+        cloudImage.fill();
     }
 
     @Override
@@ -32,6 +23,8 @@ public class Clouds extends ScenariumObject {
             this.cloudImage.translate(-10, 0);
             grid.getfieldBorder().delete();
             grid.getfieldBorder().fill();
+            grid.getScorePanel().hide();
+            grid.getScorePanel().show();
 
         if (this.cloudImage.getX() <= -120) {
 
@@ -42,13 +35,4 @@ public class Clouds extends ScenariumObject {
             grid.getScorePanel().show();
         }
     }
-
-    public void pause() {
-        try {
-            Thread.sleep(200);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
 }

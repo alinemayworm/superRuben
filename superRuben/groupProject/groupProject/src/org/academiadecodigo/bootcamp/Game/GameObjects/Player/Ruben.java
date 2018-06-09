@@ -12,8 +12,10 @@ public class Ruben implements Movable {
     private boolean dead;
 
     private int count = 0;
-    private int health;
-    private int sobriety;
+
+    private int health = 3;
+    private int sobriety = 3;
+
     private Field field;
 
     private Rectangle playerImage;
@@ -23,24 +25,21 @@ public class Ruben implements Movable {
 
         this.field = field;
 
-        field.getScorePanel().hide();
-
         this.playerImage = new Rectangle(10 + x, 10 + y, 60, 120);
         this.playerImage.fill();
         this.playerImage.setColor(Color.MAGENTA);
 
-        field.getScorePanel().hide();
     }
 
 
     public void jump() {
 
-        if(count < 4) {
+        if (count < 4) {
             this.playerImage.delete();
             this.playerImage.translate(0, -20);
             this.playerImage.fill();
             count++;
-           return;
+            return;
         }
 
         this.playerImage.delete();
@@ -49,7 +48,7 @@ public class Ruben implements Movable {
         count++;
 
 
-        if(count >= 8 ){
+        if (count == 8) {
             count = 0;
             setJumping(false);
         }
@@ -64,11 +63,14 @@ public class Ruben implements Movable {
         if (jumping) {
             jump();
 
-        } else {
-            walk();
+    } else
 
-        }
+    {
+        walk();
+
     }
+
+}
 
     public void walk() {
 
@@ -108,11 +110,4 @@ public class Ruben implements Movable {
         return down;
     }
 
-    public void pause() {
-        try {
-            Thread.sleep(200);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
 }

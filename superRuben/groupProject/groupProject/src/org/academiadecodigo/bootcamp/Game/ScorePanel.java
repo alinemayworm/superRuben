@@ -9,14 +9,12 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 public class ScorePanel {
 
     private Rectangle scorePanel;
-    private Field field;
 
-
-    public ScorePanel(Field field){
-        this.field = field;
+    public ScorePanel(){
         scorePanel = new Rectangle(610,10,120,600);
         scorePanel.setColor(Color.RED);
         scorePanel.fill();
+
     }
 
     public void show(){
