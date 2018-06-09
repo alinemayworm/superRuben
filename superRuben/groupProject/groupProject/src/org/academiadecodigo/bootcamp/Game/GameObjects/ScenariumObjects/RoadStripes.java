@@ -8,27 +8,29 @@ public class RoadStripes extends ScenariumObject {
 
 
     private Field grid;
+    int count = 0;
 
-    public RoadStripes (Field grid) {
+    Rectangle[] stripeImage = {
+
+
+            new Rectangle(10 + 0, 10 + 535, 60, 10),
+            //new Rectangle(10 + 150, 10 + 535, 30, 10),
+            new Rectangle(10 + 120, 10 + 535, 60, 10),
+            //new Rectangle(10 + 270, 10 + 535, 30, 10),
+            new Rectangle(10 + 240, 10 + 535, 60, 10),
+            //new Rectangle(10 + 390, 10 + 535, 30, 10),
+            new Rectangle(10 + 360, 10 + 535, 60, 10),
+            //new Rectangle(10 + 510, 10 + 535, 30, 10),
+            new Rectangle(10 + 480, 10 + 535, 60, 10),
+
+            new Rectangle(10 + 600, 10 + 535, 60, 10),
+
+
+    };
+
+    public RoadStripes(Field grid) {
 
         this.grid = grid;
-
-
-        Rectangle[] stripeImage = {
-
-
-                new Rectangle(10 + 60, 10 + 535, 60, 10),
-                //new Rectangle(10 + 150, 10 + 535, 30, 10),
-                new Rectangle(10 + 180, 10 + 535, 60, 10),
-                //new Rectangle(10 + 270, 10 + 535, 30, 10),
-                new Rectangle(10 + 300, 10 + 535, 60, 10),
-                //new Rectangle(10 + 390, 10 + 535, 30, 10),
-                new Rectangle(10 + 420, 10 + 535, 60, 10),
-                //new Rectangle(10 + 510, 10 + 535, 30, 10),
-                new Rectangle(10 + 540, 10 + 535, 60, 10),
-
-
-        };
 
         for (Rectangle r : stripeImage) {
             r.fill();
@@ -38,8 +40,26 @@ public class RoadStripes extends ScenariumObject {
 
     @Override
     public void move() {
-        System.out.println("move");
 
+
+        for (Rectangle r : stripeImage) {
+            r.translate(-30, 0);
+            grid.getfieldBorder().delete();
+            grid.getfieldBorder().fill();
+            grid.getScorePanel().hide();
+            grid.getScorePanel().show();
+
+
+            if (r.getX() <= -60) {
+
+                r.delete();
+                r.translate(720, 0);
+                r.fill();
+                grid.getScorePanel().hide();
+                grid.getScorePanel().show();
+
+
+            }
+        }
     }
-
 }
