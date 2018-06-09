@@ -26,7 +26,7 @@ public class Game {
     public void init() {
 
         grid.getScorePanel().show();
-        ruben = new Ruben(60, 420, grid);
+        ruben = new Ruben(grid);
         keyboard = new GameKeyboard(ruben, this);
         keyboard.controls();
     }

@@ -3,11 +3,12 @@ package org.academiadecodigo.bootcamp.Game;
 
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
+import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Field {
 
     public static final int PADDING = 10;
-    private Rectangle field;
+    private Picture field;
     private ScorePanel scorePanel;
     private Rectangle road;
     private Rectangle fieldBorder;
@@ -17,10 +18,8 @@ public class Field {
      */
     public Field() {
 
-        field = new Rectangle(PADDING, PADDING, 720 , 600);
-        field.fill();
-        field.setColor(Color.CYAN);
-
+        field = new Picture(PADDING, PADDING, "/Users/codecadet/Desktop/Game images/bg sky.jpg");
+        field.draw();
 
         fieldBorder = new Rectangle(0,0,PADDING,610);
         fieldBorder.setColor(Color.WHITE);
