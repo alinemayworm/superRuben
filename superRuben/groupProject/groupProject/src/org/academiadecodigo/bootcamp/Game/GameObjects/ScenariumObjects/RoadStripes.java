@@ -6,17 +6,34 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 public class RoadStripes extends ScenariumObject {
 
-    private Rectangle stripeImage;
+
     private Field grid;
 
-    public RoadStripes (int x, int y, Field grid) {
+    public RoadStripes (Field grid) {
 
         this.grid = grid;
 
 
-        stripeImage = new Rectangle(10 + x, 10 + y, 30, 10);
-        stripeImage.fill();
-        stripeImage.setColor(Color.YELLOW);
+        Rectangle[] stripeImage = {
+
+
+                new Rectangle(10 + 60, 10 + 535, 60, 10),
+                //new Rectangle(10 + 150, 10 + 535, 30, 10),
+                new Rectangle(10 + 180, 10 + 535, 60, 10),
+                //new Rectangle(10 + 270, 10 + 535, 30, 10),
+                new Rectangle(10 + 300, 10 + 535, 60, 10),
+                //new Rectangle(10 + 390, 10 + 535, 30, 10),
+                new Rectangle(10 + 420, 10 + 535, 60, 10),
+                //new Rectangle(10 + 510, 10 + 535, 30, 10),
+                new Rectangle(10 + 540, 10 + 535, 60, 10),
+
+
+        };
+
+        for (Rectangle r : stripeImage) {
+            r.fill();
+            r.setColor(Color.YELLOW);
+        }
     }
 
     @Override
