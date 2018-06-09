@@ -8,7 +8,8 @@ public class Birds extends Collidables {
 
     private Rectangle birdImage;
     private Field grid;
-
+    private boolean crashed;
+    private boolean moving;
 
 
     public Birds(int x, int y, Field grid) {
@@ -16,12 +17,25 @@ public class Birds extends Collidables {
 
         birdImage = new Rectangle(10 + x, 10 + y, 60, 60);
         birdImage.fill();
-        birdImage.setColor(Color.ORANGE);
+        birdImage.setColor(Color.BLUE);
     }
 
-    @Override
     public void move() {
 
-        System.out.println("move");
+        if (!crashed && moving) {
+            birdImage.translate(-15, 0);
+            grid.getfieldBorder().delete();
+            grid.getfieldBorder().fill();
+
+        }
+
+        if (birdImage.getX() <= 60) {
+            birdImage.delete();
+            birdImage.translate(660, 0);
+            birdImage.fill();
+            moving = false;
+
+        }
+
     }
 }

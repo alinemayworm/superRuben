@@ -1,5 +1,7 @@
 package org.academiadecodigo.bootcamp.Game;
 
+import org.academiadecodigo.bootcamp.Game.GameObjects.Collidables.Beers;
+import org.academiadecodigo.bootcamp.Game.GameObjects.Collidables.Birds;
 import org.academiadecodigo.bootcamp.Game.GameObjects.Collidables.Collidables;
 import org.academiadecodigo.bootcamp.Game.GameObjects.Player.Ruben;
 import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.Clouds;
@@ -14,14 +16,13 @@ public class Game {
 
     private GameKeyboard keyboard;
 
-    private Collidables[] collidables;
-
     private int delay = 100;
-
 
     private Ruben ruben;
 
     private boolean gameOn;
+
+    private Collidables currentCollidable;
 
     public void init() {
 
@@ -43,10 +44,11 @@ public class Game {
             new Mountains(600, 240, this.grid, 6),
             new Clouds(180, 60, this.grid),
             new Clouds(420, 170, this.grid),
-            new Clouds(600, 120,this.grid),
+            new Clouds(600, 120, this.grid),
             new RoadStripes(this.grid)
 
     };
+
 
 
     public void start() {
@@ -56,6 +58,7 @@ public class Game {
             pause();
             moveAll();
             ruben.move();
+            currentCollidable.move();
 
         }
     }
@@ -78,8 +81,26 @@ public class Game {
 
         }
 
-
     }
+
+    public void generateCurrentCollidable() {
+
+        Collidables bird = new Birds(600, 380, grid);
+        Collidables beer = new Beers(600, 480, grid);
+
+        int random = (int) (Math.random()*2);
+
+        switch (random){
+            case 0:
+                this.currentCollidable = bird;
+                break;
+
+            case 1:
+                this.currentCollidable = beer;
+                break;
+        }
+    }
+
 
     public boolean isGameOn() {
         return gameOn;
@@ -88,6 +109,24 @@ public class Game {
     public void setGameOn(boolean on) {
         this.gameOn = on;
     }
+
+
+    /*for (int i = 0; i < collidables.length; i++){
+
+        int random = (int) (Math.random()*collidables.length);
+
+        switch (random){
+            case 0:
+
+                collidables[i].;
+
+
+            case 1:
+
+                collidables[]
+        }
+
+    }*/
 }
 
 

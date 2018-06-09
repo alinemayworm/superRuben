@@ -20,12 +20,12 @@ public class Ruben implements Movable {
 
     private Picture playerImage;
 
-    private Picture walk1 = new Picture(70, 430, "/Users/codecadet/Desktop/Game images/walk1.png");
-    private Picture walk2 = new Picture(70, 430, "/Users/codecadet/Desktop/Game images/walk2.png");
-    private Picture walk3 = new Picture(70, 430, "/Users/codecadet/Desktop/Game images/walk3.png");
-    private Picture walk4 = new Picture(70, 430, "/Users/codecadet/Desktop/Game images/walk4.png");
+    private Picture walk1 = new Picture(70, 415, "/Users/codecadet/Desktop/Game images/walk1.png");
+    private Picture walk2 = new Picture(70, 415, "/Users/codecadet/Desktop/Game images/walk2.png");
+    private Picture walk3 = new Picture(70, 415, "/Users/codecadet/Desktop/Game images/walk3.png");
+    private Picture walk4 = new Picture(70, 415, "/Users/codecadet/Desktop/Game images/walk4.png");
 
-    private Picture walkDown = new Picture(70, 470, "/Users/codecadet/Desktop/Game images/down.png");
+    private Picture walkDown = new Picture(70, 455, "/Users/codecadet/Desktop/Game images/down.png");
 
 
     public Ruben(Field field) {
