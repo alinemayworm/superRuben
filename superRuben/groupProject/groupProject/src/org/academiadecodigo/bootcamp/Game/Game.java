@@ -24,12 +24,12 @@ public class Game {
     private ScenariumObject[] objects = {
 
 
-            new Mountains(0, 240, this.grid),
-            new Mountains(120, 240, this.grid),
-            new Mountains(240, 240, this.grid),
-            new Mountains(360, 240, this.grid),
-            new Mountains(480, 240, this.grid),
-            new Mountains(600, 240, this.grid),
+            new Mountains(0, 240, this.grid,1),
+            new Mountains(120, 240, this.grid,2),
+            new Mountains(240, 240, this.grid,3),
+            new Mountains(360, 240, this.grid,4),
+            new Mountains(480, 240, this.grid,5),
+            new Mountains(600, 240, this.grid,6),
             new Clouds(240, 60, this.grid)};
 
 
