@@ -19,7 +19,7 @@ public class Game {
 
     private Ruben ruben;
 
-    private boolean gameOn;
+    private boolean gameOn = true;
 
     private Collidables currentCollidable;
 
@@ -52,16 +52,17 @@ public class Game {
     };
 
 
-
     public void start() {
 
-        while (true) {
+        while (gameOn) {
 
             pause();
             moveAll();
             ruben.move();
-
-
+            collisionDetection(ruben);
+            if(ruben.isDead()){
+                setGameOn(false);
+            }
         }
     }
 
@@ -82,7 +83,7 @@ public class Game {
             s.move();
 
         }
-        if(currentCollidable.isCurrent()) {
+        if (currentCollidable.isCurrent()) {
             currentCollidable.move();
         } else {
             generateCurrentCollidable();
@@ -92,9 +93,10 @@ public class Game {
 
     public void generateCurrentCollidable() {
 
-        int random = (int) (Math.random()*2);
+        int random = (int) (Math.random() * 2);
 
-        switch (random){
+
+        switch (random) {
             case 0:
                 this.currentCollidable = bird;
                 currentCollidable.setCurrent(true);
@@ -107,6 +109,33 @@ public class Game {
         }
     }
 
+    public void collisionDetection(Ruben ruben) {
+
+        System.out.println("entered collision method");
+
+        if (currentCollidable.getMinX() == ruben.getMinX()) {
+               // ((xCollidableMax > xRubenMin && xCollidableMax < xRubenMax) &&
+                 //       (yCollidableMax > yRubenMin && yCollidableMax > yRubenMax))) {
+
+            System.out.println("collision");
+            System.out.println(currentCollidable.getClass());
+
+            if (currentCollidable instanceof Beers) {
+
+                ruben.setSobriety(ruben.getSobriety() - 1);
+                return;
+
+            }
+
+            if (currentCollidable instanceof Birds) {
+
+                ruben.setHealth(ruben.getHealth() - 1);
+            }
+            if (ruben.getHealth() == 0 || ruben.getSobriety() == 0) {
+                ruben.setDead(true);
+            }
+        }
+    }
 
     public boolean isGameOn() {
         return gameOn;
@@ -116,23 +145,6 @@ public class Game {
         this.gameOn = on;
     }
 
-
-    /*for (int i = 0; i < collidables.length; i++){
-
-        int random = (int) (Math.random()*collidables.length);
-
-        switch (random){
-            case 0:
-
-                collidables[i].;
-
-
-            case 1:
-
-                collidables[]
-        }
-
-    }*/
 }
 
 

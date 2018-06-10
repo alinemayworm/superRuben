@@ -18,21 +18,24 @@ public class Ruben implements Movable {
 
     private Field field;
 
-    private Picture playerImage;
+    private Picture playerImage = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk1.png");
 
-    private Picture walk1 = new Picture(70, 415, "/Users/codecadet/Desktop/Game images/walk1.png");
-    private Picture walk2 = new Picture(70, 415, "/Users/codecadet/Desktop/Game images/walk2.png");
-    private Picture walk3 = new Picture(70, 415, "/Users/codecadet/Desktop/Game images/walk3.png");
-    private Picture walk4 = new Picture(70, 415, "/Users/codecadet/Desktop/Game images/walk4.png");
+    private int minX = playerImage.getX();
+    private int minY = playerImage.getY();
+    private int maxX = playerImage.getMaxX();
+    private int maxY = playerImage.getMaxY();
 
-    private Picture walkDown = new Picture(70, 455, "/Users/codecadet/Desktop/Game images/down.png");
+    private Picture walk1 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk1.png");
+    private Picture walk2 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk2.png");
+    private Picture walk3 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk3.png");
+    private Picture walk4 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk4.png");
+
+    private Picture walkDown = new Picture(60, 455, "/Users/codecadet/Desktop/Game images/down.png");
 
 
     public Ruben(Field field) {
 
         this.field = field;
-
-        this.playerImage = walk1;
         this.playerImage.draw();
 
     }
@@ -152,4 +155,35 @@ public class Ruben implements Movable {
         return down;
     }
 
+    public int getMinX(){
+        return minX;
+    }
+
+    public int getMaxX() {
+        return maxX;
+    }
+
+    public int getMinY() {
+        return minY;
+    }
+
+    public int getMaxY() {
+        return maxY;
+    }
+
+    public void setSobriety(int sobriety) {
+        this.sobriety = sobriety;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getSobriety() {
+        return sobriety;
+    }
+
+    public int getHealth() {
+        return health;
+    }
 }

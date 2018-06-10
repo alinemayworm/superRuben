@@ -3,21 +3,29 @@ package org.academiadecodigo.bootcamp.Game.GameObjects.Collidables;
 import org.academiadecodigo.bootcamp.Game.Field;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
+import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Beers extends Collidables {
 
-    private Rectangle beerImage;
+    private Picture beerImage = new Picture(600,480,"/Users/codecadet/Desktop/Game images/beer1.png");
+
+
     private Field grid;
-    private boolean crashed;
+
+    private int maxX = beerImage.getMaxX();
+    private int maxY = beerImage.getMaxY();
+    private int minX = beerImage.getX();
+    private int minY = beerImage.getY();
+
 
 
 
     public Beers(int x, int y, Field grid) {
         this.grid = grid;
-        crashed = false;
-        beerImage = new Rectangle(10 + x, 10 + y, 60, 60);
-        beerImage.setColor(Color.ORANGE);
-        beerImage.fill();
+        beerImage.draw();
+        setCollidablePicture(beerImage);
+        setPosition();
+
     }
 
     @Override
@@ -25,8 +33,10 @@ public class Beers extends Collidables {
 
         if(isCurrent()) {
             beerImage.delete();
-            beerImage.translate(-20, 0);
-            beerImage.fill();
+            beerImage.translate(-10, 0);
+            setCollidablePicture(beerImage);
+            beerImage.draw();
+            setPosition();
             grid.getfieldBorder().delete();
             grid.getfieldBorder().fill();
             grid.getScorePanel().hide();
@@ -38,13 +48,30 @@ public class Beers extends Collidables {
             double i = beerImage.getX();
             beerImage.delete();
             beerImage.translate(-i + 610, 0);
-            beerImage.fill();
+            setCollidablePicture(beerImage);
+            beerImage.draw();
             grid.getScorePanel().hide();
             grid.getScorePanel().show();
             setCurrent(false);
 
         }
 
+       setPosition();
+
+
     }
+
+    public void setPosition(){
+        super.setPosition(beerImage.getX(),beerImage.getMaxY(),beerImage.getMaxX(),beerImage.getMaxY());
+
+    }
+
+
+    @Override
+    public void setMaxX(int maxX) {
+        this.maxX = beerImage.getMaxX();
+    }
+
+
 
 }
