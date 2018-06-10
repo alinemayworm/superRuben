@@ -18,6 +18,7 @@ public class ScorePanel {
     }
 
     public void show(){
+
         scorePanel.fill();
     }
 

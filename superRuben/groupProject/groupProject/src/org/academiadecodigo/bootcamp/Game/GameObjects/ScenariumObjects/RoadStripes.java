@@ -14,17 +14,11 @@ public class RoadStripes extends ScenariumObject {
 
 
             new Rectangle(10 + 0, 10 + 535, 60, 10),
-            //new Rectangle(10 + 150, 10 + 535, 30, 10),
             new Rectangle(10 + 120, 10 + 535, 60, 10),
-            //new Rectangle(10 + 270, 10 + 535, 30, 10),
             new Rectangle(10 + 240, 10 + 535, 60, 10),
-            //new Rectangle(10 + 390, 10 + 535, 30, 10),
             new Rectangle(10 + 360, 10 + 535, 60, 10),
-            //new Rectangle(10 + 510, 10 + 535, 30, 10),
             new Rectangle(10 + 480, 10 + 535, 60, 10),
-
             new Rectangle(10 + 600, 10 + 535, 60, 10),
-
 
     };
 
@@ -40,7 +34,6 @@ public class RoadStripes extends ScenariumObject {
 
     @Override
     public void move() {
-
 
         for (Rectangle r : stripeImage) {
             r.translate(-30, 0);

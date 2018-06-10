@@ -20,11 +20,6 @@ public class Ruben implements Movable {
 
     private Picture playerImage = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk1.png");
 
-    private double minX = playerImage.getX();
-    private double minY = playerImage.getY();
-    private double maxX = playerImage.getMaxX();
-    private double maxY = playerImage.getMaxY();
-
     private Picture walk1 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk1.png");
     private Picture walk2 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk2.png");
     private Picture walk3 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk3.png");
@@ -46,7 +41,7 @@ public class Ruben implements Movable {
         this.playerImage = walk1;
         this.playerImage.draw();
 
-        if (countJumps < 7) {
+        if (countJumps < 5) {
             this.playerImage.delete();
             this.playerImage.translate(0, -20);
             this.playerImage.draw();
@@ -54,7 +49,7 @@ public class Ruben implements Movable {
             return;
         }
 
-        if(countJumps >= 7 && countJumps < 18) {
+        if(countJumps >= 5 && countJumps < 15) {
             countJumps++;
             return;
         }
@@ -65,7 +60,7 @@ public class Ruben implements Movable {
         countJumps++;
 
 
-        if (countJumps == 25) {
+        if (countJumps == 20) {
             countJumps = 0;
             setJumping(false);
         }
@@ -170,20 +165,23 @@ public class Ruben implements Movable {
         return down;
     }
 
-    public double getMinX(){
-        return minX;
+    public double getMinX() {
+        return playerImage.getX();
     }
 
-    public double getMaxX() {
-        return maxX;
+    public double getMaxX()
+    {
+        return playerImage.getMaxX();
     }
 
-    public double getMinY() {
-        return minY;
+    public double getMinY()
+    {
+        return playerImage.getY();
     }
 
-    public double getMaxY() {
-        return maxY;
+    public double getMaxY()
+    {
+        return playerImage.getMaxY();
     }
 
     public void setSobriety(int sobriety) {

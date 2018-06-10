@@ -8,17 +8,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 public class Beers extends Collidables {
 
     private Picture beerImage = new Picture(610,465,"/Users/codecadet/Desktop/Game images/beer1.png");
-
-
     private Field grid;
-
-    private int maxX = beerImage.getMaxX();
-    private int maxY = beerImage.getMaxY();
-    private int minX = beerImage.getX();
-    private int minY = beerImage.getY();
-
-
-
 
     public Beers(Field grid) {
         this.grid = grid;
@@ -33,7 +23,7 @@ public class Beers extends Collidables {
 
         if(isCurrent()) {
             beerImage.delete();
-            beerImage.translate(-10, 0);
+            beerImage.translate(-15, 0);
             setCollidablePicture(beerImage);
             setPosition();
             beerImage.draw();
@@ -47,7 +37,7 @@ public class Beers extends Collidables {
         if(beerImage.getX() <= -60) {
             double i = beerImage.getX();
             beerImage.delete();
-            beerImage.translate(-i + 610, 0);
+            beerImage.translate(610 - i, 0);
             setPosition();
             setCollidablePicture(beerImage);
             beerImage.draw();
@@ -64,13 +54,5 @@ public class Beers extends Collidables {
         super.setPosition(beerImage.getX(),beerImage.getY(),beerImage.getMaxX(),beerImage.getMaxY());
 
     }
-
-
-    @Override
-    public void setMaxX(int maxX) {
-        this.maxX = beerImage.getMaxX();
-    }
-
-
 
 }
