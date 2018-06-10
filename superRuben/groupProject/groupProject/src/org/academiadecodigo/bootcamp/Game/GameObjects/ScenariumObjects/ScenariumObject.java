@@ -7,5 +7,12 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public abstract class ScenariumObject implements Movable {
 
+    public Rectangle image;
+
     public abstract void move();
+
+    public Rectangle getBeerImage() {
+        return image;
+    }
+
 }
