@@ -20,17 +20,17 @@ public class Ruben implements Movable {
 
     private Picture playerImage = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk1.png");
 
-    private int minX = playerImage.getX();
-    private int minY = playerImage.getY();
-    private int maxX = playerImage.getMaxX();
-    private int maxY = playerImage.getMaxY();
+    private double minX = playerImage.getX();
+    private double minY = playerImage.getY();
+    private double maxX = playerImage.getMaxX();
+    private double maxY = playerImage.getMaxY();
 
     private Picture walk1 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk1.png");
     private Picture walk2 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk2.png");
     private Picture walk3 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk3.png");
     private Picture walk4 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk4.png");
 
-    private Picture walkDown = new Picture(60, 455, "/Users/codecadet/Desktop/Game images/down.png");
+    private Picture walkDown = new Picture(60, 445, "/Users/codecadet/Desktop/Game images/down.png");
 
 
     public Ruben(Field field) {
@@ -42,11 +42,19 @@ public class Ruben implements Movable {
 
 
     public void jump() {
+        this.playerImage.delete();
+        this.playerImage = walk1;
+        this.playerImage.draw();
 
-        if (countJumps < 6) {
+        if (countJumps < 7) {
             this.playerImage.delete();
             this.playerImage.translate(0, -20);
             this.playerImage.draw();
+            countJumps++;
+            return;
+        }
+
+        if(countJumps >= 7 && countJumps < 18) {
             countJumps++;
             return;
         }
@@ -57,7 +65,7 @@ public class Ruben implements Movable {
         countJumps++;
 
 
-        if (countJumps == 12) {
+        if (countJumps == 25) {
             countJumps = 0;
             setJumping(false);
         }
@@ -76,7 +84,7 @@ public class Ruben implements Movable {
         }
 
         if (down) {
-            duck();
+            squat();
             return;
         }
 
@@ -86,21 +94,28 @@ public class Ruben implements Movable {
     }
 
 
-    public void duck() {
+    public void squat() {
 
-        if (countDown <= 6) {
+
+        if (countDown == 0){
             this.playerImage.delete();
             this.playerImage = walkDown;
             this.playerImage.draw();
             countDown++;
             return;
+        }
+
+        if (countDown > 0 && countDown < 18) {
+            countDown++;
+            return;
 
         }
-        this.playerImage.delete();
-        this.playerImage = walk1;
-        this.playerImage.draw();
-        setDown(false);
-        countDown = 0;
+            this.playerImage.delete();
+            this.playerImage = walk1;
+            this.playerImage.draw();
+            setDown(false);
+            countDown = 0;
+
     }
 
 
@@ -155,19 +170,19 @@ public class Ruben implements Movable {
         return down;
     }
 
-    public int getMinX(){
+    public double getMinX(){
         return minX;
     }
 
-    public int getMaxX() {
+    public double getMaxX() {
         return maxX;
     }
 
-    public int getMinY() {
+    public double getMinY() {
         return minY;
     }
 
-    public int getMaxY() {
+    public double getMaxY() {
         return maxY;
     }
 
@@ -185,5 +200,9 @@ public class Ruben implements Movable {
 
     public int getHealth() {
         return health;
+    }
+
+    public Picture getPlayerImage() {
+        return playerImage;
     }
 }

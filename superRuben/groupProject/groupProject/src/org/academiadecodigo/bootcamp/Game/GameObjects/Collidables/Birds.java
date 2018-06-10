@@ -16,10 +16,10 @@ public class Birds extends Collidables {
 
     private Field grid;
 
-    Picture flyOne = new Picture(610, 380, "/Users/codecadet/Desktop/Game images/bat1.png");
-    Picture flyTwo = new Picture(610, 380, "/Users/codecadet/Desktop/Game images/bat2.png");
-   // Picture flyThree = new Picture(610, 380, "/Users/codecadet/Desktop/Game images/bat3.png");
-    // Picture flyFour = new Picture(610, 380, "/Users/codecadet/Desktop/Game images/bat4.png");
+    Picture flyOne = new Picture(610, 360, "/Users/codecadet/Desktop/Game images/bat1.png");
+    Picture flyTwo = new Picture(610, 360, "/Users/codecadet/Desktop/Game images/bat2.png");
+    //Picture flyThree = new Picture(610, 380, "/Users/codecadet/Desktop/Game images/bat3.png");
+    //Picture flyFour = new Picture(610, 380, "/Users/codecadet/Desktop/Game images/bat4.png");
 
 
     public Birds(int x, int y, Field grid) {
@@ -39,7 +39,7 @@ public class Birds extends Collidables {
                 birdImage.delete();
                 birdImage = flyTwo;
                 birdImage.draw();
-                birdImage.translate(-10,0);
+                birdImage.translate(-20,0);
                 setPosition();
                 return;
             }
@@ -64,7 +64,7 @@ public class Birds extends Collidables {
             birdImage = flyOne;
             setPosition();
             birdImage.draw();
-            birdImage.translate(-10,0);
+            birdImage.translate(-20,0);
 
             if (birdImage.getX() <= -60) {
                 double i = birdImage.getX();
@@ -78,7 +78,7 @@ public class Birds extends Collidables {
     }
 
     public void setPosition(){
-        super.setPosition(birdImage.getX(),birdImage.getMaxY(),birdImage.getMaxX(),birdImage.getMaxY());
+        super.setPosition(birdImage.getX(),birdImage.getY(),birdImage.getMaxX(),birdImage.getMaxY());
 
     }
 }

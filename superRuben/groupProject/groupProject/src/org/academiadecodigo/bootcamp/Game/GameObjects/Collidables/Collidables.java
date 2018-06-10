@@ -78,4 +78,8 @@ public abstract class Collidables implements Movable {
     public void setCollidablePicture(Picture collidablePicture) {
         this.collidablePicture = collidablePicture;
     }
+
+    public Picture getCollidablePicture() {
+        return collidablePicture;
+    }
 }

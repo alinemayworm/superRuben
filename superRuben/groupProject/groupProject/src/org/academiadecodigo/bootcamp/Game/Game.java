@@ -58,9 +58,7 @@ public class Game {
 
             pause();
             moveAll();
-            ruben.move();
-            collisionDetection(ruben);
-            if(ruben.isDead()){
+            if (ruben.isDead()) {
                 setGameOn(false);
             }
         }
@@ -89,6 +87,9 @@ public class Game {
             generateCurrentCollidable();
         }
 
+        ruben.move();
+        collisionDetection(ruben);
+
     }
 
     public void generateCurrentCollidable() {
@@ -98,12 +99,12 @@ public class Game {
 
         switch (random) {
             case 0:
-                this.currentCollidable = bird;
+                this.currentCollidable = beer;
                 currentCollidable.setCurrent(true);
                 break;
 
             case 1:
-                this.currentCollidable = beer;
+                this.currentCollidable = bird;
                 currentCollidable.setCurrent(true);
                 break;
         }
@@ -111,30 +112,42 @@ public class Game {
 
     public void collisionDetection(Ruben ruben) {
 
-        System.out.println("entered collision method");
+        if (((ruben.getPlayerImage().getX() <= currentCollidable.getMinX() && currentCollidable.getMinX() <= ruben.getPlayerImage().getMaxX()) ||
+                (ruben.getPlayerImage().getX() <= currentCollidable.getMaxX() && currentCollidable.getMaxX() <= ruben.getPlayerImage().getMaxX())) &&
+                (ruben.getPlayerImage().getY() >= currentCollidable.getMinY() && currentCollidable.getMinY() <= ruben.getPlayerImage().getMaxY()) ||
+                (ruben.getPlayerImage().getY() >= currentCollidable.getMaxY() && currentCollidable.getMaxY() <= ruben.getPlayerImage().getMaxY())) {
 
-        if (currentCollidable.getMinX() == ruben.getMinX()) {
-               // ((xCollidableMax > xRubenMin && xCollidableMax < xRubenMax) &&
-                 //       (yCollidableMax > yRubenMin && yCollidableMax > yRubenMax))) {
-
-            System.out.println("collision");
-            System.out.println(currentCollidable.getClass());
+            System.out.println("collision detected");
+            System.out.println(ruben.getMaxX());
+            System.out.println(currentCollidable.getMinX());
 
             if (currentCollidable instanceof Beers) {
 
+                System.out.println("crashed a beer");
+
+                currentCollidable.getCollidablePicture().delete();
                 ruben.setSobriety(ruben.getSobriety() - 1);
-                return;
+                currentCollidable.setCurrent(false);
 
             }
+
 
             if (currentCollidable instanceof Birds) {
 
+                System.out.println("crashed a bird");
+
+                currentCollidable.getCollidablePicture().delete();
                 ruben.setHealth(ruben.getHealth() - 1);
+                currentCollidable.setCurrent(false);
             }
+
+
             if (ruben.getHealth() == 0 || ruben.getSobriety() == 0) {
                 ruben.setDead(true);
             }
+
         }
+
     }
 
     public boolean isGameOn() {
