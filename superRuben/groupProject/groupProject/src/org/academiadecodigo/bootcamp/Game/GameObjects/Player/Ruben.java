@@ -2,8 +2,7 @@ package org.academiadecodigo.bootcamp.Game.GameObjects.Player;
 
 import org.academiadecodigo.bootcamp.Game.Field;
 import org.academiadecodigo.bootcamp.Game.GameObjects.Movable;
-import org.academiadecodigo.simplegraphics.graphics.Color;
-import org.academiadecodigo.simplegraphics.graphics.Rectangle;
+import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Ruben implements Movable {
 
@@ -11,45 +10,72 @@ public class Ruben implements Movable {
     private boolean down;
     private boolean dead;
 
-    private int count = 0;
+    private int countJumps = 0;
+    private int countDown = 0;
 
     private int health = 3;
     private int sobriety = 3;
 
     private Field field;
 
-    private Rectangle playerImage;
+    private Picture playerImage = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk1.png");
+
+    private double minX = playerImage.getX();
+    private double minY = playerImage.getY();
+    private double maxX = playerImage.getMaxX();
+    private double maxY = playerImage.getMaxY();
+
+    private Picture walk1 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk1.png");
+    private Picture walk2 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk2.png");
+    private Picture walk3 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk3.png");
+    private Picture walk4 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk4.png");
+
+    private Picture walkDown = new Picture(60, 445, "/Users/codecadet/Desktop/Game images/down.png");
 
 
-    public Ruben(int x, int y, Field field) {
+    public Ruben(Field field) {
 
         this.field = field;
-
-        this.playerImage = new Rectangle(10 + x, 10 + y, 60, 120);
-        this.playerImage.fill();
-        this.playerImage.setColor(Color.MAGENTA);
+        this.playerImage.draw();
 
     }
 
 
     public void jump() {
+        this.playerImage.delete();
+        this.playerImage = walk1;
+        this.playerImage.draw();
 
+<<<<<<< HEAD
         if (count < 7) {
+=======
+        if (countJumps < 7) {
+>>>>>>> aline
             this.playerImage.delete();
             this.playerImage.translate(0, -20);
-            this.playerImage.fill();
-            count++;
+            this.playerImage.draw();
+            countJumps++;
+            return;
+        }
+
+        if(countJumps >= 7 && countJumps < 18) {
+            countJumps++;
             return;
         }
 
         this.playerImage.delete();
         this.playerImage.translate(0, 20);
-        this.playerImage.fill();
-        count++;
+        this.playerImage.draw();
+        countJumps++;
 
 
+<<<<<<< HEAD
         if (count == 14) {
             count = 0;
+=======
+        if (countJumps == 25) {
+            countJumps = 0;
+>>>>>>> aline
             setJumping(false);
         }
 
@@ -62,27 +88,70 @@ public class Ruben implements Movable {
 
         if (jumping) {
             jump();
+            return;
 
-    } else
+        }
 
-    {
+        if (down) {
+            squat();
+            return;
+        }
+
+
         walk();
 
     }
 
-}
+
+    public void squat() {
+
+
+        if (countDown == 0){
+            this.playerImage.delete();
+            this.playerImage = walkDown;
+            this.playerImage.draw();
+            countDown++;
+            return;
+        }
+
+        if (countDown > 0 && countDown < 18) {
+            countDown++;
+            return;
+
+        }
+            this.playerImage.delete();
+            this.playerImage = walk1;
+            this.playerImage.draw();
+            setDown(false);
+            countDown = 0;
+
+    }
+
 
     public void walk() {
 
-        if (playerImage.getColor() == Color.PINK) {
+        if (playerImage == walk1) {
             playerImage.delete();
-            playerImage.setColor(Color.MAGENTA);
-            playerImage.fill();
+            playerImage = walk2;
+            playerImage.draw();
+            return;
+        }
+        if (playerImage == walk2) {
+            playerImage.delete();
+            playerImage = walk3;
+            playerImage.draw();
+            return;
+        }
+        if (playerImage == walk3) {
+            playerImage.delete();
+            playerImage = walk4;
+            playerImage.draw();
             return;
         }
         playerImage.delete();
-        playerImage.setColor(Color.PINK);
-        playerImage.fill();
+        playerImage = walk1;
+        playerImage.draw();
+
     }
 
     public void setJumping(boolean jump) {
@@ -114,4 +183,39 @@ public class Ruben implements Movable {
         return down;
     }
 
+    public double getMinX(){
+        return minX;
+    }
+
+    public double getMaxX() {
+        return maxX;
+    }
+
+    public double getMinY() {
+        return minY;
+    }
+
+    public double getMaxY() {
+        return maxY;
+    }
+
+    public void setSobriety(int sobriety) {
+        this.sobriety = sobriety;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getSobriety() {
+        return sobriety;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public Picture getPlayerImage() {
+        return playerImage;
+    }
 }

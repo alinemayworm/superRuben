@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Game.java" line="15" mnemonic="9" />
     <bookmark url="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Game.java" line="84" mnemonic="8" />
   </component>
+=======
+>>>>>>> aline
   <component name="ChangeListManager">
-    <list default="true" id="86f499d3-1ab9-4851-a2fa-b816a6c1ae77" name="Default" comment="" />
+    <list default="true" id="86f499d3-1ab9-4851-a2fa-b816a6c1ae77" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Beers.java" beforeDir="false" afterPath="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Beers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Birds.java" beforeDir="false" afterPath="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Birds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Collidables.java" beforeDir="false" afterPath="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Collidables.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,13 +22,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/superRuben$SuperGame.ic" NAME="SuperGame Coverage Results" MODIFIED="1528572020938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.academiadecodigo.bootcamp.Game.GameObjects.Player.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="356">
               <caret line="100" column="99" lean-forward="true" selection-start-line="100" selection-start-column="99" selection-end-line="100" selection-end-column="99" />
+=======
+            <state relative-caret-position="391">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
+>>>>>>> aline
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2975#2976#0" expanded="true" />
@@ -63,6 +81,7 @@
       <file leaf-file-name="ScenariumObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/ScenariumObject.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="180">
               <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
@@ -79,9 +98,92 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+=======
+            <state relative-caret-position="-79">
+              <caret line="111" column="102" lean-forward="true" selection-start-line="111" selection-start-column="102" selection-end-line="111" selection-end-column="102" />
+>>>>>>> aline
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4888#4889#0" expanded="true" />
+                <element signature="e#4917#4918#0" expanded="true" />
+                <element signature="e#4958#4959#0" expanded="true" />
+                <element signature="e#4990#4991#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SuperGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/SuperGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Collidables.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Collidables.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="18" column="51" lean-forward="true" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+              <folding>
+                <element signature="e#1806#1807#0" expanded="true" />
+                <element signature="e#1846#1847#0" expanded="true" />
+                <element signature="e#1917#1918#0" expanded="true" />
+                <element signature="e#1955#1956#0" expanded="true" />
+                <element signature="e#1989#1990#0" expanded="true" />
+                <element signature="e#2019#2020#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Beers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Beers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-102">
+              <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScorePanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/ScorePanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ruben.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Player/Ruben.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-226">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="e#4404#4405#0" expanded="true" />
+                <element signature="e#4438#4439#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoadStripes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/RoadStripes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="960">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Birds.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Birds.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-32">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -106,6 +208,9 @@
       <find>grid</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -123,9 +228,9 @@
         <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Player/Ruben.java" />
         <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameStructure/Game.java" />
         <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameTest.java" />
-        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Field.java" />
         <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/SuperGame.java" />
         <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/ScorePanel.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/RoadStripes.java" />
         <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/Clouds.java" />
         <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/Mountains.java" />
@@ -136,6 +241,19 @@
         <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Player/Ruben.java" />
         <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Game.java" />
         <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Beers.java" />
+=======
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameKeyboard.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/Mountains.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/Clouds.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/RoadStripes.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Field.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/ScenariumObject.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Player/Ruben.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Beers.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Birds.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Collidables.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Game.java" />
+>>>>>>> aline
       </list>
     </option>
   </component>
@@ -149,10 +267,12 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="2" />
     <option name="y" value="23" />
-    <option name="width" value="1843" />
+    <option name="width" value="1888" />
     <option name="height" value="977" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -165,6 +285,7 @@
               <item name="superRuben" type="b2602c69:ProjectViewProjectNode" />
               <item name="groupProject" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
             <path>
               <item name="superRuben" type="b2602c69:ProjectViewProjectNode" />
               <item name="groupProject" type="462c0819:PsiDirectoryNode" />
@@ -207,13 +328,21 @@
               <item name="GameObjects" type="462c0819:PsiDirectoryNode" />
               <item name="ScenariumObjects" type="462c0819:PsiDirectoryNode" />
             </path>
+=======
+>>>>>>> aline
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
+=======
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+>>>>>>> aline
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,15 +451,28 @@
       <workItem from="1528446272477" duration="2042000" />
       <workItem from="1528449778163" duration="11425000" />
       <workItem from="1528474571180" duration="5554000" />
+<<<<<<< HEAD
       <workItem from="1528646673392" duration="1628000" />
+=======
+      <workItem from="1528557614149" duration="227000" />
+      <workItem from="1528558839140" duration="28069000" />
+      <workItem from="1528651097299" duration="2755000" />
+>>>>>>> aline
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="33271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1843" height="977" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="62826000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2" y="23" width="1888" height="977" extended-state="0" />
+>>>>>>> aline
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -342,20 +484,34 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.32954547" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23653525" />
+=======
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14084508" />
+>>>>>>> aline
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+<<<<<<< HEAD
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+=======
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32953784" />
+>>>>>>> aline
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -367,6 +523,10 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+<<<<<<< HEAD
+=======
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+>>>>>>> aline
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -383,7 +543,11 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32954547" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+=======
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+>>>>>>> aline
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info id="Capture Tool" order="5" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -403,9 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -413,9 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -423,9 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -433,11 +588,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+<<<<<<< HEAD
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#816#817#0" expanded="true" />
             <element signature="e#848#849#0" expanded="true" />
           </folding>
+=======
+>>>>>>> aline
         </state>
       </provider>
     </entry>
@@ -445,9 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -455,11 +610,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+<<<<<<< HEAD
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
             <element signature="e#472#473#0" expanded="true" />
           </folding>
+=======
+>>>>>>> aline
         </state>
       </provider>
     </entry>
@@ -481,9 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -491,9 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -501,9 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -511,11 +660,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+<<<<<<< HEAD
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#816#817#0" expanded="true" />
             <element signature="e#848#849#0" expanded="true" />
           </folding>
+=======
+>>>>>>> aline
         </state>
       </provider>
     </entry>
@@ -523,9 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -533,9 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -543,11 +689,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+<<<<<<< HEAD
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
             <element signature="e#472#473#0" expanded="true" />
           </folding>
+=======
+>>>>>>> aline
         </state>
       </provider>
     </entry>
@@ -576,9 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -586,9 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -596,9 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -606,11 +746,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+<<<<<<< HEAD
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#816#817#0" expanded="true" />
             <element signature="e#848#849#0" expanded="true" />
           </folding>
+=======
+>>>>>>> aline
         </state>
       </provider>
     </entry>
@@ -618,9 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -628,9 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -638,11 +775,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+<<<<<<< HEAD
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
             <element signature="e#472#473#0" expanded="true" />
           </folding>
+=======
+>>>>>>> aline
         </state>
       </provider>
     </entry>
@@ -698,64 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/ScorePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/RoadStripes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/SuperGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/Clouds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Collidables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Movable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -763,6 +845,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/groupProject/groupProject/lib/simplegraphics.jar!/org/academiadecodigo/simplegraphics/keyboard/Keyboard.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/groupProject/groupProject/lib/simplegraphics.jar!/org/academiadecodigo/simplegraphics/keyboard/KeyboardEvent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/Clouds.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="243">
+          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+=======
+        <state relative-caret-position="393">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+>>>>>>> aline
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Collidables.java">
+=======
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/ScenariumObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/Mountains.java">
+>>>>>>> aline
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="787">
+          <caret line="55" column="38" lean-forward="true" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/RoadStripes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/Mountains.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -791,6 +938,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
           <caret line="61" selection-start-line="61" selection-end-line="61" />
+=======
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/SuperGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Player/Ruben.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-226">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#4404#4405#0" expanded="true" />
+            <element signature="e#4438#4439#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameKeyboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+>>>>>>> aline
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -799,6 +970,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Birds.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="375">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
@@ -841,18 +1013,61 @@
             <element signature="e#3004#3005#0" expanded="true" />
             <element signature="e#3045#3046#0" expanded="true" />
             <element signature="e#3077#3078#0" expanded="true" />
+=======
+        <state relative-caret-position="-32">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Beers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/ScorePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Collidables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="18" column="51" lean-forward="true" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding>
+            <element signature="e#1806#1807#0" expanded="true" />
+            <element signature="e#1846#1847#0" expanded="true" />
+            <element signature="e#1917#1918#0" expanded="true" />
+            <element signature="e#1955#1956#0" expanded="true" />
+            <element signature="e#1989#1990#0" expanded="true" />
+            <element signature="e#2019#2020#0" expanded="true" />
+>>>>>>> aline
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Player/Ruben.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="393">
           <caret line="27" column="66" lean-forward="true" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1841#1842#0" expanded="true" />
             <element signature="e#1875#1876#0" expanded="true" />
+=======
+        <state relative-caret-position="-79">
+          <caret line="111" column="102" lean-forward="true" selection-start-line="111" selection-start-column="102" selection-end-line="111" selection-end-column="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4888#4889#0" expanded="true" />
+            <element signature="e#4917#4918#0" expanded="true" />
+            <element signature="e#4958#4959#0" expanded="true" />
+            <element signature="e#4990#4991#0" expanded="true" />
+>>>>>>> aline
           </folding>
         </state>
       </provider>
