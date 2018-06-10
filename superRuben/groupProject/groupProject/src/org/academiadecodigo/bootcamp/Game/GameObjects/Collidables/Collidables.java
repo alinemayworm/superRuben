@@ -19,13 +19,13 @@ public abstract class Collidables implements Movable {
     private double minY = collidablePicture.getY();
     private double maxY = collidablePicture.getMaxY();
 
-    public void setPosition(int minX, int minY, int maxX, int maxY){
+    public void setPosition(double minX, double minY, double maxX, double maxY){
         this.minX = minX;
         this.minY = minY;
         this.maxX = maxX;
         this.maxY = maxY;
     }
-
+private boolean crashed;
 
 
 
@@ -81,5 +81,13 @@ public abstract class Collidables implements Movable {
 
     public Picture getCollidablePicture() {
         return collidablePicture;
+    }
+
+    public void setCrashed(boolean crashed) {
+        this.crashed = crashed;
+    }
+
+    public boolean isCrashed() {
+        return crashed;
     }
 }

@@ -20,7 +20,7 @@ public class Beers extends Collidables {
 
 
 
-    public Beers(int x, int y, Field grid) {
+    public Beers(Field grid) {
         this.grid = grid;
         beerImage.draw();
         setCollidablePicture(beerImage);
