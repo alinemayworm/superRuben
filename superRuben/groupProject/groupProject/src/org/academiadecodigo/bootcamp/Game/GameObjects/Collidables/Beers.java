@@ -31,23 +31,6 @@ public class Beers extends Collidables {
     @Override
     public void move() {
 
-<<<<<<< HEAD
-
-        this.beerImage.translate(-20,0);
-        this.beerImage.delete();
-        this.beerImage.fill();
-
-
-        if (beerImage.getX() <= -60){
-            beerImage.translate(700,0);
-        }
-
-    }
-
-
-    public Rectangle getBeerImage() {
-        return beerImage;
-=======
         if(isCurrent()) {
             beerImage.delete();
             beerImage.translate(-10, 0);
@@ -75,7 +58,6 @@ public class Beers extends Collidables {
         }
 
 
->>>>>>> aline
     }
 
     public void setPosition(){

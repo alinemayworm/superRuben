@@ -1,10 +1,7 @@
 package org.academiadecodigo.bootcamp.Game;
 
 import org.academiadecodigo.bootcamp.Game.GameObjects.Collidables.Beers;
-<<<<<<< HEAD
-=======
 import org.academiadecodigo.bootcamp.Game.GameObjects.Collidables.Birds;
->>>>>>> aline
 import org.academiadecodigo.bootcamp.Game.GameObjects.Collidables.Collidables;
 import org.academiadecodigo.bootcamp.Game.GameObjects.Player.Ruben;
 import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.Clouds;
@@ -18,13 +15,7 @@ public class Game {
 
     private GameKeyboard keyboard;
 
-<<<<<<< HEAD
-    private Collidables beer = new Beers(610,480,grid);
-
-    private int delay = 150;
-=======
     private int delay = 100;
->>>>>>> aline
 
     private Ruben ruben;
 
@@ -90,10 +81,6 @@ public class Game {
             s.move();
 
         }
-<<<<<<< HEAD
-        beer.move();
-        collisionDetection();
-=======
         if (currentCollidable.isCurrent() && !currentCollidable.isCrashed()) {
             currentCollidable.move();
             collisionDetection(ruben);
@@ -102,7 +89,6 @@ public class Game {
         }
 
         ruben.move();
->>>>>>> aline
 
     }
 
@@ -177,42 +163,6 @@ public class Game {
 
         }
     }
-
-    public void collisionDetection() {
-        Beers newbeer = (Beers) beer;
-
-
-        if ((((((Beers) beer).getBeerImage().getX() <= ruben.getPlayerImage().getX() + 60) &&
-                ((Beers) beer).getBeerImage().getX() > ruben.getPlayerImage().getX()) ||
-
-                (((Beers) beer).getBeerImage().getX() + 60 <= ruben.getPlayerImage().getX() + 60) &&
-                        ((Beers) beer).getBeerImage().getX() + 60 > ruben.getPlayerImage().getX())
-
-                && ((((
-
-                ((Beers) beer).getBeerImage().getY() <= ruben.getPlayerImage().getY() + 120) &&
-                ((Beers) beer).getBeerImage().getY() > ruben.getPlayerImage().getY()) ||
-
-                (((Beers) beer).getBeerImage().getY() + 60 <= ruben.getPlayerImage().getY() + 120)) &&
-                (((Beers) beer).getBeerImage().getY() + 60 > ruben.getPlayerImage().getY()))) {
-
-
-            ((Beers) beer).getBeerImage().delete();
-
-            ((Beers) beer).getBeerImage().translate(610 - ((Beers) beer).getBeerImage().getX(), 0);
-
-        }
-
-    }
-
-
-
-
-
-
-
-
-
 
     public boolean isGameOn() {
         return gameOn;

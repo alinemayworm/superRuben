@@ -46,11 +46,7 @@ public class Ruben implements Movable {
         this.playerImage = walk1;
         this.playerImage.draw();
 
-<<<<<<< HEAD
-        if (count < 7) {
-=======
         if (countJumps < 7) {
->>>>>>> aline
             this.playerImage.delete();
             this.playerImage.translate(0, -20);
             this.playerImage.draw();
@@ -69,13 +65,8 @@ public class Ruben implements Movable {
         countJumps++;
 
 
-<<<<<<< HEAD
-        if (count == 14) {
-            count = 0;
-=======
         if (countJumps == 25) {
             countJumps = 0;
->>>>>>> aline
             setJumping(false);
         }
 
@@ -157,10 +148,6 @@ public class Ruben implements Movable {
     public void setJumping(boolean jump) {
         this.jumping = jump;
 
-    }
-
-    public Rectangle getPlayerImage() {
-        return playerImage;
     }
 
     public boolean isJumping() {
