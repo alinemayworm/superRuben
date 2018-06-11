@@ -8,10 +8,13 @@ import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.Clouds;
 import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.Mountains;
 import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.RoadStripes;
 import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.ScenariumObject;
+import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Game {
 
     private Field grid = new Field();
+
+    private Picture vampire = new Picture(10,10,"/backgroundVampire.png");
 
     private GameKeyboard keyboard;
 
@@ -20,6 +23,8 @@ public class Game {
     private int countObjects = 0;
 
     private Ruben ruben;
+
+    private String deadBy;
 
     private boolean gameOn = true;
 
@@ -157,6 +162,7 @@ public class Game {
 
 
                 currentCollidable.getCollidablePicture().delete();
+                ruben.blink();
 
                 System.out.println(countObjects);
 
@@ -164,11 +170,15 @@ public class Game {
                 if (currentCollidable instanceof Beers) {
                     generateCurrentCollidable();
                     ruben.setSobriety(ruben.getSobriety() - 1);
+                    grid.getScorePanel().getSobrietyDisplay().grow(-15,0);
+                    grid.getScorePanel().getSobrietyDisplay().translate(-15,0);
+
 
                     if (ruben.getSobriety() == 0) {
                         ruben.setDead(true);
                         return;
                     }
+
                     System.out.println("ruben sobriety is now " + ruben.getSobriety());
                     return;
                 }
@@ -177,18 +187,25 @@ public class Game {
                 if (currentCollidable instanceof Birds) {
                     generateCurrentCollidable();
                     ruben.setHealth(ruben.getHealth() - 1);
+                    grid.getScorePanel().getHealthDisplay().grow(-15,0);
+                    grid.getScorePanel().getHealthDisplay().translate(-15,0);
 
                     if (ruben.getHealth() == 0) {
                         ruben.setDead(true);
+                        vampire.draw();
+
+
                         return;
                     }
 
                     System.out.println("ruben health is now " + ruben.getHealth());
-                    return;
+
 
                 }
 
+
             }
+
 
         }
 

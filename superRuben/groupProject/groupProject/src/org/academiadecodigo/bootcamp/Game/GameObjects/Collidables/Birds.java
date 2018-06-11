@@ -7,12 +7,12 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Birds extends Collidables {
 
-    private Picture birdImage = new Picture(610, 360, "/Users/codecadet/Desktop/Game images/bat1.png");
+    private Picture birdImage = new Picture(610, 360, "/bat1.png");
 
     private Field grid;
 
-    Picture flyOne = new Picture(610, 360, "/Users/codecadet/Desktop/Game images/bat1.png");
-    Picture flyTwo = new Picture(610, 360, "/Users/codecadet/Desktop/Game images/bat2.png");
+    Picture flyOne = new Picture(610, 360, "/bat1.png");
+    Picture flyTwo = new Picture(610, 360, "/bat2.png");
 
 
     public Birds(Field grid) {

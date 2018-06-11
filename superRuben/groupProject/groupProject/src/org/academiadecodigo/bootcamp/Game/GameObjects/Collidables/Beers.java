@@ -7,7 +7,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Beers extends Collidables {
 
-    private Picture beerImage = new Picture(610,465,"/Users/codecadet/Desktop/Game images/beer1.png");
+    private Picture beerImage = new Picture(610,465,"/beer1.png");
     private Field grid;
 
     public Beers(Field grid) {
@@ -46,7 +46,6 @@ public class Beers extends Collidables {
             setCurrent(false);
 
         }
-
 
     }
 

@@ -10,7 +10,7 @@ import javax.sound.midi.Receiver;
 public abstract class Collidables implements Movable {
 
     private boolean current;
-    private Picture collidablePicture = new Picture(610, 360, "/Users/codecadet/Desktop/Game images/bat1.png");
+    private Picture collidablePicture = new Picture(610, 360, "/bat1.png");
 
 
     private double minX = collidablePicture.getX();
