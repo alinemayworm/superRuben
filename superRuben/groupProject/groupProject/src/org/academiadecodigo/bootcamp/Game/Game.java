@@ -8,23 +8,30 @@ import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.Clouds;
 import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.Mountains;
 import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.RoadStripes;
 import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.ScenariumObject;
+import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Game {
 
     private Field grid = new Field();
 
+    private Picture vampire = new Picture(10,10,"/backgroundVampire.png");
+
     private GameKeyboard keyboard;
 
-    private int delay = 100;
+    private int delay = 50;
+
+    private int countObjects = 0;
 
     private Ruben ruben;
+
+    private String deadBy;
 
     private boolean gameOn = true;
 
     private Collidables currentCollidable;
 
-    Collidables bird = new Birds(grid);
-    Collidables beer = new Beers(grid);
+    private Collidables bird = new Birds(grid);
+    private Collidables beer = new Beers(grid);
 
     public void init() {
 
@@ -33,10 +40,11 @@ public class Game {
         keyboard = new GameKeyboard(ruben, this);
         keyboard.controls();
         generateCurrentCollidable();
+        grid.getScorePanel().hide();
+        grid.getScorePanel().show();
     }
 
     private ScenariumObject[] objects = {
-
 
             new Mountains(0, 240, this.grid, 1),
             new Mountains(120, 240, this.grid, 2),
@@ -54,14 +62,14 @@ public class Game {
 
     public void start() {
 
-        while (gameOn) {
-
-            pause();
-            moveAll();
-            if (ruben.isDead()) {
-                setGameOn(false);
+        while (!ruben.isDead()) {
+            if (countObjects <= 15) {
+                pause();
+                moveAll();
             }
         }
+
+        System.out.println(ruben.isDead());
     }
 
 
@@ -81,14 +89,19 @@ public class Game {
             s.move();
 
         }
-        if (currentCollidable.isCurrent() && !currentCollidable.isCrashed()) {
+
+
+        if (currentCollidable.isCurrent()) {
             currentCollidable.move();
-            collisionDetection(ruben);
+
         } else {
+
             generateCurrentCollidable();
         }
 
         ruben.move();
+
+        collisionDetection(ruben);
 
     }
 
@@ -96,73 +109,108 @@ public class Game {
 
         int random = (int) (Math.random() * 2);
 
-
         switch (random) {
             case 0:
-                this.currentCollidable = beer;
-                currentCollidable.getCollidablePicture().translate(610-currentCollidable.getMinX(),0);
+                this.currentCollidable = new Beers(grid);
+                currentCollidable.setCollidablePicture(beer.getCollidablePicture());
                 currentCollidable.setCurrent(true);
                 currentCollidable.setCrashed(false);
                 currentCollidable.getCollidablePicture().draw();
-                currentCollidable.setPosition(currentCollidable.getMinX(),currentCollidable.getMinY(),currentCollidable.getMaxX(),currentCollidable.getMaxY());
+                currentCollidable.setPosition(currentCollidable.getMinX(), currentCollidable.getMinY(), currentCollidable.getMaxX(), currentCollidable.getMaxY());
+                grid.getScorePanel().hide();
+                grid.getScorePanel().show();
                 break;
 
             case 1:
-                this.currentCollidable = bird;
-                currentCollidable.getCollidablePicture().translate(610-currentCollidable.getMinX(),0);
+                this.currentCollidable = new Birds(grid);
+                currentCollidable.setCollidablePicture(bird.getCollidablePicture());
                 currentCollidable.setCurrent(true);
                 currentCollidable.setCrashed(false);
                 currentCollidable.getCollidablePicture().draw();
-                currentCollidable.setPosition(currentCollidable.getMinX(),currentCollidable.getMinY(),currentCollidable.getMaxX(),currentCollidable.getMaxY());
+                currentCollidable.setPosition(currentCollidable.getMinX(), currentCollidable.getMinY(), currentCollidable.getMaxX(), currentCollidable.getMaxY());
+                grid.getScorePanel().hide();
+                grid.getScorePanel().show();
                 break;
+
         }
+
+        countObjects++;
+
     }
 
     public void collisionDetection(Ruben ruben) {
 
+        double rubenMinX = ruben.getMinX();
+        double rubenMaxX = ruben.getMaxX();
+        double rubenMinY = ruben.getMinY();
+        double rubenMaxY = ruben.getMaxY();
+
+        double currentMinX = currentCollidable.getMinX();
+        double currentMaxX = currentCollidable.getMaxX();
+        double currentMinY = currentCollidable.getMinY();
+        double currentMaxY = currentCollidable.getMaxY();
+
+
         if (!currentCollidable.isCrashed()) {
 
 
-            if (((ruben.getPlayerImage().getX() <= currentCollidable.getMinX() && currentCollidable.getMinX() <= ruben.getPlayerImage().getMaxX()) ||
-                    (ruben.getPlayerImage().getX() <= currentCollidable.getMaxX() && currentCollidable.getMaxX() <= ruben.getPlayerImage().getMaxX())) &&
-                    (ruben.getPlayerImage().getY() >= currentCollidable.getMinY() && currentCollidable.getMinY() <= ruben.getPlayerImage().getMaxY()) ||
-                    (ruben.getPlayerImage().getY() >= currentCollidable.getMaxY() && currentCollidable.getMaxY() <= ruben.getPlayerImage().getMaxY())) {
+            if (((rubenMinX <= currentMinX && currentMinX <= rubenMaxX) ||
+                    rubenMinX <= currentMaxX && currentMaxX <= rubenMaxX) &&
+
+                    ((rubenMinY <= currentMinY && currentMinY <= rubenMaxY) ||
+                            (rubenMinY <= currentMaxY && currentMaxY <= rubenMaxY))) {
 
 
-                System.out.println("collision detected");
-                System.out.println(ruben.getMaxX());
-                System.out.println(currentCollidable.getMinX());
                 currentCollidable.getCollidablePicture().delete();
+                ruben.blink();
 
+                System.out.println(countObjects);
 
 
                 if (currentCollidable instanceof Beers) {
-
-                    System.out.println("crashed a beer");
+                    generateCurrentCollidable();
                     ruben.setSobriety(ruben.getSobriety() - 1);
+                    grid.getScorePanel().getSobrietyDisplay().grow(-15,0);
+                    grid.getScorePanel().getSobrietyDisplay().translate(-15,0);
 
 
+                    if (ruben.getSobriety() == 0) {
+                        ruben.setDead(true);
+                        return;
+                    }
+
+                    System.out.println("ruben sobriety is now " + ruben.getSobriety());
+                    return;
                 }
 
 
                 if (currentCollidable instanceof Birds) {
-
-                    System.out.println("crashed a bird");
+                    generateCurrentCollidable();
                     ruben.setHealth(ruben.getHealth() - 1);
+                    grid.getScorePanel().getHealthDisplay().grow(-15,0);
+                    grid.getScorePanel().getHealthDisplay().translate(-15,0);
+
+                    if (ruben.getHealth() == 0) {
+                        ruben.setDead(true);
+                        vampire.draw();
+
+
+                        return;
+                    }
+
+                    System.out.println("ruben health is now " + ruben.getHealth());
+
 
                 }
 
-
-                if (ruben.getHealth() == 0 || ruben.getSobriety() == 0) {
-                    ruben.setDead(true);
-                }
-
-                generateCurrentCollidable();
 
             }
 
+
         }
+
     }
+
 
     public boolean isGameOn() {
         return gameOn;

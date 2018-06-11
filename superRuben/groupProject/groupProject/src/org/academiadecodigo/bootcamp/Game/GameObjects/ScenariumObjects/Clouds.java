@@ -13,7 +13,7 @@ public class Clouds extends ScenariumObject {
 
         this.grid = grid;
 
-        cloudImage = new Picture (10 + x, 10 + y, "/Users/codecadet/Desktop/clouds pictures/cloud 1.png");
+        cloudImage = new Picture (10 + x, 10 + y, "/cloud 1.png");
         cloudImage.draw();
     }
 

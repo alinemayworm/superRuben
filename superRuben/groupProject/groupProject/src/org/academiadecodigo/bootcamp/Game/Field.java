@@ -18,7 +18,7 @@ public class Field {
      */
     public Field() {
 
-        field = new Picture(PADDING, PADDING, "/Users/codecadet/Desktop/Game images/bg sky.jpg");
+        field = new Picture(PADDING, PADDING, "/bgsky.jpg");
         field.draw();
 
         fieldBorder = new Rectangle(0,0,PADDING,610);

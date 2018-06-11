@@ -1,7 +1,5 @@
 package org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects;
 import org.academiadecodigo.bootcamp.Game.Field;
-import org.academiadecodigo.simplegraphics.graphics.Color;
-import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Mountains extends ScenariumObject{
@@ -22,24 +20,24 @@ public class Mountains extends ScenariumObject{
 
             switch(number) {
                 case 1:
-                    this.mountainImage = new Picture(10 + x, 10 + y, "/Users/codecadet/Desktop/mountainpics/montanha 1-.png");
+                    this.mountainImage = new Picture(10 + x, 10 + y, "/montanha 1-.png");
                     break;
                 case 2:
-                    this.mountainImage = new Picture(10 + x, 10 + y, "/Users/codecadet/Desktop/mountainpics/montanha 2-.png");
+                    this.mountainImage = new Picture(10 + x, 10 + y, "/montanha 2-.png");
                     break;
                 case 3:
-                    this.mountainImage = new Picture(10 + x, 10 + y, "/Users/codecadet/Desktop/mountainpics/montanha 3-.png");
+                    this.mountainImage = new Picture(10 + x, 10 + y, "/montanha 3-.png");
                     break;
                 case 4:
-                    this.mountainImage = new Picture(10 + x, 10 + y, "/Users/codecadet/Desktop/mountainpics/montanha 4-.png");
+                    this.mountainImage = new Picture(10 + x, 10 + y, "/montanha 4-.png");
                     break;
 
                 case 5:
-                    this.mountainImage = new Picture(10 + x, 10 + y, "/Users/codecadet/Desktop/mountainpics/montanha 5-.png");
+                    this.mountainImage = new Picture(10 + x, 10 + y, "/montanha 5-.png");
                     break;
 
                 case 6:
-                    this.mountainImage = new Picture(10 + x, 10 + y, "/Users/codecadet/Desktop/mountainpics/montanha 6-.png");
+                    this.mountainImage = new Picture(10 + x, 10 + y, "/montanha 6-.png");
                     break;
             }
 

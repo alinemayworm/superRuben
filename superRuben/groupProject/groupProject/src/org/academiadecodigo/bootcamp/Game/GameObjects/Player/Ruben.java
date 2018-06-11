@@ -9,7 +9,10 @@ public class Ruben implements Movable {
     private boolean jumping;
     private boolean down;
     private boolean dead;
+private boolean blinking;
 
+
+private int countBlinks = 0;
     private int countJumps = 0;
     private int countDown = 0;
 
@@ -18,19 +21,14 @@ public class Ruben implements Movable {
 
     private Field field;
 
-    private Picture playerImage = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk1.png");
+    private Picture playerImage = new Picture(60, 415, "/walk1.png");
 
-    private double minX = playerImage.getX();
-    private double minY = playerImage.getY();
-    private double maxX = playerImage.getMaxX();
-    private double maxY = playerImage.getMaxY();
+    private Picture walk1 = new Picture(60, 415, "/walk1.png");
+    private Picture walk2 = new Picture(60, 415, "/walk2.png");
+    private Picture walk3 = new Picture(60, 415, "/walk3.png");
+    private Picture walk4 = new Picture(60, 415, "/walk4.png");
 
-    private Picture walk1 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk1.png");
-    private Picture walk2 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk2.png");
-    private Picture walk3 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk3.png");
-    private Picture walk4 = new Picture(60, 415, "/Users/codecadet/Desktop/Game images/walk4.png");
-
-    private Picture walkDown = new Picture(60, 445, "/Users/codecadet/Desktop/Game images/down.png");
+    private Picture walkDown = new Picture(60, 445, "/down.png");
 
 
     public Ruben(Field field) {
@@ -46,7 +44,7 @@ public class Ruben implements Movable {
         this.playerImage = walk1;
         this.playerImage.draw();
 
-        if (countJumps < 7) {
+        if (countJumps < 5) {
             this.playerImage.delete();
             this.playerImage.translate(0, -20);
             this.playerImage.draw();
@@ -54,7 +52,7 @@ public class Ruben implements Movable {
             return;
         }
 
-        if(countJumps >= 7 && countJumps < 18) {
+        if(countJumps >= 5 && countJumps < 15) {
             countJumps++;
             return;
         }
@@ -65,7 +63,7 @@ public class Ruben implements Movable {
         countJumps++;
 
 
-        if (countJumps == 25) {
+        if (countJumps == 20) {
             countJumps = 0;
             setJumping(false);
         }
@@ -90,6 +88,18 @@ public class Ruben implements Movable {
 
 
         walk();
+
+    }
+
+    public void blink(){
+
+        playerImage.delete();
+        pause();
+        playerImage.draw();
+        pause();
+        playerImage.delete();
+        pause();
+        playerImage.draw();
 
     }
 
@@ -170,20 +180,23 @@ public class Ruben implements Movable {
         return down;
     }
 
-    public double getMinX(){
-        return minX;
+    public double getMinX() {
+        return playerImage.getX();
     }
 
-    public double getMaxX() {
-        return maxX;
+    public double getMaxX()
+    {
+        return playerImage.getMaxX();
     }
 
-    public double getMinY() {
-        return minY;
+    public double getMinY()
+    {
+        return playerImage.getY();
     }
 
-    public double getMaxY() {
-        return maxY;
+    public double getMaxY()
+    {
+        return playerImage.getMaxY();
     }
 
     public void setSobriety(int sobriety) {
@@ -204,5 +217,21 @@ public class Ruben implements Movable {
 
     public Picture getPlayerImage() {
         return playerImage;
+    }
+
+    public boolean isBlinking() {
+        return blinking;
+    }
+
+    public void setBlinking(boolean blinking) {
+        this.blinking = blinking;
+    }
+
+    public void pause(){
+        try {
+            Thread.sleep(25);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -10,8 +10,7 @@ import javax.sound.midi.Receiver;
 public abstract class Collidables implements Movable {
 
     private boolean current;
-    private Picture collidablePicture = new Picture(60,60,"/Users/codecadet/Desktop/Game images/bat1.png");
-
+    private Picture collidablePicture = new Picture(610, 360, "/bat1.png");
 
 
     private double minX = collidablePicture.getX();
@@ -19,15 +18,16 @@ public abstract class Collidables implements Movable {
     private double minY = collidablePicture.getY();
     private double maxY = collidablePicture.getMaxY();
 
-    public void setPosition(double minX, double minY, double maxX, double maxY){
+    private boolean crashed;
+
+    public void setPosition(double minX, double minY, double maxX, double maxY) {
+
         this.minX = minX;
         this.minY = minY;
         this.maxX = maxX;
         this.maxY = maxY;
+
     }
-private boolean crashed;
-
-
 
     @Override
     public void move() {
@@ -42,10 +42,9 @@ private boolean crashed;
         return current;
     }
 
-    public double getMaxX(){
+    public double getMaxX() {
         return maxX;
     }
-
 
     public double getMaxY() {
         return maxY;
