@@ -9,4 +9,9 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 public abstract class ScenariumObject implements Movable {
 
     public abstract void move();
+
+    public void show(){
+
+    }
+
 }

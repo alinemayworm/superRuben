@@ -16,6 +16,8 @@ public class Game {
 
     private Picture vampire = new Picture(10, 10, "/backgroundVampire.png");
     private Picture bannerFase2 = new Picture(10, 10, "/banner.png");
+    private Picture nightSky = new Picture(10, 10, "/nightsky.png");
+    private Picture daySky = new Picture(10, 10, "/bgsky.jpg");
 
     private GameKeyboard keyboard;
 
@@ -23,7 +25,7 @@ public class Game {
 
     private int countObjects = 0;
 
-    private Ruben ruben;
+    private Ruben ruben = new Ruben(grid);
 
     private boolean gameOn = false;
 
@@ -32,16 +34,15 @@ public class Game {
     private Collidables bird = new Birds(grid);
     private Collidables beer = new Beers(grid);
 
+
     public void init() {
 
         grid.getScorePanel().show();
-        ruben = new Ruben(grid);
         keyboard = new GameKeyboard(ruben, this);
         keyboard.controls();
         generateCurrentCollidable();
         grid.getScorePanel().hide();
         grid.getScorePanel().show();
-        bannerFase2.draw();
 
     }
 
@@ -63,12 +64,45 @@ public class Game {
 
     public void start() {
 
+        bannerFase2.draw();
+
 
         while (true) {
             System.out.println(gameOn);
 
-            if(gameOn){
+            if (gameOn) {
                 bannerFase2.delete();
+
+                while (!ruben.isDead() && countObjects <= 2) {
+
+                    pause(delay);
+                    moveAll();
+                }
+
+
+                if (!ruben.isDead()) {
+
+                    startFase2();
+                    bannerFase2.draw();
+                    pause(2000);
+                    bannerFase2.delete();
+
+                }
+
+                while (!ruben.isDead() && countObjects <= 4) {
+
+                    pause(delay);
+                    moveAll();
+                }
+
+                if (!ruben.isDead()) {
+
+                    startFase3();
+                    bannerFase2.draw();
+                    pause(2000);
+                    bannerFase2.delete();
+
+                }
 
                 while (!ruben.isDead() && countObjects <= 6) {
 
@@ -76,23 +110,8 @@ public class Game {
                     moveAll();
                 }
 
+                gameOn = false;
 
-                bannerFase2.draw();
-                pause(2000);
-
-                this.delay = 50;
-                ruben.setSobriety(3);
-                ruben.setHealth(3);
-                grid.getScorePanel().reset();
-                grid.getScorePanel().hide();
-                grid.getScorePanel().show();
-
-                bannerFase2.delete();
-
-                while (!ruben.isDead() && countObjects <= 20) {
-                    pause(delay);
-                    moveAll();
-                }
             }
 
         }
@@ -266,6 +285,49 @@ public class Game {
 
 
         }
+
+    }
+
+    public void startFase2() {
+
+        this.delay = 75;
+        ruben.setSobriety(3);
+        ruben.setHealth(3);
+        grid.getScorePanel().reset();
+        grid.getScorePanel().hide();
+        grid.getScorePanel().show();
+        grid.getField().delete();
+        grid.setField(nightSky);
+        grid.getField().draw();
+        grid.getRoad().delete();
+        grid.getRoad().fill();
+
+        for (ScenariumObject s : objects) {
+            s.show();
+        }
+
+
+    }
+
+
+    public void startFase3() {
+
+        this.delay = 50;
+        ruben.setSobriety(3);
+        ruben.setHealth(3);
+        grid.getScorePanel().reset();
+        grid.getScorePanel().hide();
+        grid.getScorePanel().show();
+        grid.getField().delete();
+        grid.setField(daySky);
+        grid.getField().draw();
+        grid.getRoad().delete();
+        grid.getRoad().fill();
+
+        for (ScenariumObject s : objects) {
+            s.show();
+        }
+
 
     }
 

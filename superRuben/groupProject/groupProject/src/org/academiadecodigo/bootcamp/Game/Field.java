@@ -45,4 +45,15 @@ public class Field {
         return fieldBorder;
     }
 
+    public void setField(Picture field) {
+        this.field = field;
+    }
+
+    public Picture getField() {
+        return field;
+    }
+
+    public Rectangle getRoad() {
+        return road;
+    }
 }

@@ -10,6 +10,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/superRuben$SuperGame.ic" NAME="SuperGame Coverage Results" MODIFIED="1528798635185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.academiadecodigo.bootcamp.Game.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="GameKeyboard.java" pinned="false" current-in-tab="false">
@@ -24,32 +29,58 @@
       <file leaf-file-name="Field.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Field.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2026">
-              <caret line="64" column="7" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
+            <state relative-caret-position="412">
+              <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
               <folding>
-                <element signature="e#8086#8087#0" expanded="true" />
-                <element signature="e#8115#8116#0" expanded="true" />
-                <element signature="e#8156#8157#0" expanded="true" />
-                <element signature="e#8188#8189#0" expanded="true" />
+                <element signature="e#1068#1069#0" expanded="true" />
+                <element signature="e#1102#1103#0" expanded="true" />
+                <element signature="e#1135#1136#0" expanded="true" />
+                <element signature="e#1163#1164#0" expanded="true" />
+                <element signature="e#1197#1198#0" expanded="true" />
+                <element signature="e#1224#1225#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScorePanel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1735">
+              <caret line="290" column="30" lean-forward="true" selection-start-line="290" selection-start-column="30" selection-end-line="290" selection-end-column="30" />
+              <folding>
+                <element signature="e#9113#9114#0" expanded="true" />
+                <element signature="e#9142#9143#0" expanded="true" />
+                <element signature="e#9183#9184#0" expanded="true" />
+                <element signature="e#9215#9216#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScenariumObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/ScenariumObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mountains.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/Mountains.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScorePanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/ScorePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="93" column="31" lean-forward="true" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
+            <state relative-caret-position="303">
+              <caret line="88" column="47" lean-forward="true" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
               <folding>
                 <element signature="e#1740#1741#0" expanded="true" />
                 <element signature="e#1776#1777#0" expanded="true" />
@@ -60,13 +91,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="RoadStripes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/RoadStripes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Game.java" />
         <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/ScorePanel.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Field.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/ScenariumObject.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/Mountains.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/RoadStripes.java" />
+        <option value="$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Game.java" />
       </list>
     </option>
   </component>
@@ -79,7 +123,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="2" />
     <option name="y" value="23" />
     <option name="width" value="1681" />
@@ -115,6 +159,21 @@
               <item name="groupProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="superRuben" type="b2602c69:ProjectViewProjectNode" />
+              <item name="groupProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="GameObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="superRuben" type="b2602c69:ProjectViewProjectNode" />
+              <item name="groupProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="GameObjects" type="462c0819:PsiDirectoryNode" />
+              <item name="ScenariumObjects" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -215,12 +274,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528792524138</updated>
-      <workItem from="1528792526782" duration="4105000" />
+      <workItem from="1528792526782" duration="8441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4105000" />
+    <option name="totallyTimeSpent" value="8441000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -232,7 +291,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="23" width="1681" height="977" extended-state="0" />
+    <frame x="2" y="23" width="1681" height="977" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -246,6 +305,7 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32954547" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32946917" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
@@ -279,6 +339,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/ScorePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="88" column="47" lean-forward="true" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
+          <folding>
+            <element signature="e#1740#1741#0" expanded="true" />
+            <element signature="e#1776#1777#0" expanded="true" />
+            <element signature="e#1819#1820#0" expanded="true" />
+            <element signature="e#1857#1858#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/ScenariumObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/Mountains.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/ScenariumObjects/RoadStripes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding>
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameKeyboard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-447">
@@ -286,35 +395,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2026">
-          <caret line="64" column="7" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
+        <state relative-caret-position="1735">
+          <caret line="290" column="30" lean-forward="true" selection-start-line="290" selection-start-column="30" selection-end-line="290" selection-end-column="30" />
           <folding>
-            <element signature="e#8086#8087#0" expanded="true" />
-            <element signature="e#8115#8116#0" expanded="true" />
-            <element signature="e#8156#8157#0" expanded="true" />
-            <element signature="e#8188#8189#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/ScorePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="93" column="31" lean-forward="true" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
-          <folding>
-            <element signature="e#1740#1741#0" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-            <element signature="e#1819#1820#0" expanded="true" />
-            <element signature="e#1857#1858#0" expanded="true" />
+            <element signature="e#9113#9114#0" expanded="true" />
+            <element signature="e#9142#9143#0" expanded="true" />
+            <element signature="e#9183#9184#0" expanded="true" />
+            <element signature="e#9215#9216#0" expanded="true" />
           </folding>
         </state>
       </provider>

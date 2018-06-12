@@ -68,6 +68,14 @@ public class Mountains extends ScenariumObject{
 
     }
 
+
+    public void show(){
+
+        this.mountainImage.delete();
+        this.mountainImage.draw();
+
+    }
+
 }
 
 

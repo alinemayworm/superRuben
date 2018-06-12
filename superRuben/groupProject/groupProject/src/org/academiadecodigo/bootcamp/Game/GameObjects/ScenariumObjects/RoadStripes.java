@@ -58,4 +58,11 @@ public class RoadStripes extends ScenariumObject {
 
     }
 
+    public void show(){
+        for (Rectangle r : stripeImage){
+            r.delete();
+            r.fill();
+        }
+    }
+
 }
