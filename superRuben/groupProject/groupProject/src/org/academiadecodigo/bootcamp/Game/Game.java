@@ -13,7 +13,8 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 public class Game {
 
     private Field grid = new Field();
-
+    private Picture bannerStart = new Picture(10,10,"/banner start.png");
+    private Picture bannerInstructions = new Picture(10,10,"/banner instructions.png");
     private Picture vampire = new Picture(10, 10, "/backgroundVampire.png");
     private Picture bannerFase2 = new Picture(10, 10, "/banner.png");
     private Picture nightSky = new Picture(10, 10, "/nightsky.png");
@@ -64,13 +65,15 @@ public class Game {
 
     public void start() {
 
-        bannerFase2.draw();
-
+        bannerStart.draw();
+        pause(5000);
+        bannerStart.delete();
+        bannerInstructions.draw();
 
         while (true) {
 
-            if (gameOn) {
-                bannerFase2.delete();
+            while (gameOn) {
+                bannerInstructions.delete();
 
                 while (!ruben.isDead() && countObjects <= 2) {
 
