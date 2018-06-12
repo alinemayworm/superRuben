@@ -14,19 +14,18 @@ public class Game {
 
     private Field grid = new Field();
 
-    private Picture vampire = new Picture(10,10,"/backgroundVampire.png");
+    private Picture vampire = new Picture(10, 10, "/backgroundVampire.png");
+    private Picture bannerFase2 = new Picture(10, 10, "/banner.png");
 
     private GameKeyboard keyboard;
 
-    private int delay = 50;
+    private int delay = 100;
 
     private int countObjects = 0;
 
     private Ruben ruben;
 
-    private String deadBy;
-
-    private boolean gameOn = true;
+    private boolean gameOn = false;
 
     private Collidables currentCollidable;
 
@@ -42,6 +41,8 @@ public class Game {
         generateCurrentCollidable();
         grid.getScorePanel().hide();
         grid.getScorePanel().show();
+        bannerFase2.draw();
+
     }
 
     private ScenariumObject[] objects = {
@@ -62,18 +63,44 @@ public class Game {
 
     public void start() {
 
-        while (!ruben.isDead()) {
-            if (countObjects <= 15) {
-                pause();
-                moveAll();
+
+        while (true) {
+            System.out.println(gameOn);
+
+            if(gameOn){
+                bannerFase2.delete();
+
+                while (!ruben.isDead() && countObjects <= 6) {
+
+                    pause(delay);
+                    moveAll();
+                }
+
+
+                bannerFase2.draw();
+                pause(2000);
+
+                this.delay = 50;
+                ruben.setSobriety(3);
+                ruben.setHealth(3);
+                grid.getScorePanel().reset();
+                grid.getScorePanel().hide();
+                grid.getScorePanel().show();
+
+                bannerFase2.delete();
+
+                while (!ruben.isDead() && countObjects <= 20) {
+                    pause(delay);
+                    moveAll();
+                }
             }
+
         }
 
-        System.out.println(ruben.isDead());
     }
 
 
-    public void pause() {
+    public void pause(int delay) {
 
         try {
             Thread.sleep(delay);
@@ -170,8 +197,24 @@ public class Game {
                 if (currentCollidable instanceof Beers) {
                     generateCurrentCollidable();
                     ruben.setSobriety(ruben.getSobriety() - 1);
-                    grid.getScorePanel().getSobrietyDisplay().grow(-15,0);
-                    grid.getScorePanel().getSobrietyDisplay().translate(-15,0);
+
+                    switch (ruben.getSobriety()) {
+
+                        case 2:
+                            grid.getScorePanel().getSobrietyDisplay().grow(0, -16);
+                            grid.getScorePanel().getSobrietyDisplay().translate(0, 16);
+                            break;
+
+                        case 1:
+                            grid.getScorePanel().getSobrietyDisplay().grow(0, -16);
+                            grid.getScorePanel().getSobrietyDisplay().translate(0, 16);
+
+                            break;
+
+                        case 0:
+                            grid.getScorePanel().getSobrietyEllipse().delete();
+
+                    }
 
 
                     if (ruben.getSobriety() == 0) {
@@ -187,8 +230,23 @@ public class Game {
                 if (currentCollidable instanceof Birds) {
                     generateCurrentCollidable();
                     ruben.setHealth(ruben.getHealth() - 1);
-                    grid.getScorePanel().getHealthDisplay().grow(-15,0);
-                    grid.getScorePanel().getHealthDisplay().translate(-15,0);
+                    switch (ruben.getSobriety()) {
+
+                        case 2:
+                            grid.getScorePanel().getHealthDisplay().grow(0, -15);
+                            grid.getScorePanel().getHealthDisplay().translate(0, 15);
+                            break;
+
+                        case 1:
+                            grid.getScorePanel().getHealthDisplay().grow(0, -15);
+                            grid.getScorePanel().getHealthDisplay().translate(0, 15);
+
+                            break;
+
+                        case 0:
+                            grid.getScorePanel().getHealthEllipse().delete();
+
+                    }
 
                     if (ruben.getHealth() == 0) {
                         ruben.setDead(true);
