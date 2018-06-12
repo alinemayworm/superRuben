@@ -16,15 +16,15 @@ public class ScorePanel {
 
 
     public ScorePanel() {
-        scorePanel = new Picture(610, 10, "/SCOREPANEL.jpg");
+        scorePanel = new Picture(610, 10, "/SCOREPANEL2.png");
 
         scorePanel.draw();
 
-        healthDisplay = new Rectangle(625, 77, 90, 5);
+        healthDisplay = new Rectangle(655, 77, 5, 90);
         healthDisplay.setColor(Color.GREEN);
         healthDisplay.fill();
 
-        sobrietyDisplay = new Rectangle(625, 127, 90, 5);
+        sobrietyDisplay = new Rectangle(655, 300, 5, 90);
         sobrietyDisplay.setColor(Color.ORANGE);
         sobrietyDisplay.fill();
 
