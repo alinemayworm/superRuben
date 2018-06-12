@@ -68,7 +68,6 @@ public class Game {
 
 
         while (true) {
-            System.out.println(gameOn);
 
             if (gameOn) {
                 bannerFase2.delete();
