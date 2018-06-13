@@ -13,39 +13,30 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 public class Game {
 
     private Field grid = new Field();
-    private Picture bannerStart = new Picture(10,10,"/banner start.png");
-    private Picture bannerInstructions = new Picture(10,10,"/banner instructions.png");
+
+    private Picture bannerStart = new Picture(10, 10, "/banner start.png");
+    private Picture bannerInstructions = new Picture(10, 10, "/banner instructions.png");
     private Picture vampire = new Picture(10, 10, "/backgroundVampire.png");
-    private Picture bannerFase2 = new Picture(10, 10, "/banner.png");
+    private Picture drunk = new Picture(10,10,"/backgroundBeer.jpg");
+    private Picture bannerFase2 = new Picture(10, 10, "/bannerFase2.png");
+    private Picture bannerFase3 = new Picture(10,10,"/bannerFase3.png");
     private Picture nightSky = new Picture(10, 10, "/nightsky.png");
     private Picture daySky = new Picture(10, 10, "/bgsky.jpg");
-
-    private GameKeyboard keyboard;
+    private Picture gameWin = new Picture(10,10,"/gameWin.png");
 
     private int delay = 100;
-
     private int countObjects = 0;
+
+    private GameKeyboard keyboard;
 
     private Ruben ruben = new Ruben(grid);
 
     private boolean gameOn = false;
+    private boolean run = true;
 
     private Collidables currentCollidable;
-
     private Collidables bird = new Birds(grid);
     private Collidables beer = new Beers(grid);
-
-
-    public void init() {
-
-        grid.getScorePanel().show();
-        keyboard = new GameKeyboard(ruben, this);
-        keyboard.controls();
-        generateCurrentCollidable();
-        grid.getScorePanel().hide();
-        grid.getScorePanel().show();
-
-    }
 
     private ScenariumObject[] objects = {
 
@@ -63,35 +54,54 @@ public class Game {
     };
 
 
+    public void init() {
+
+        grid.getScorePanel().show();
+        keyboard = new GameKeyboard(ruben, this);
+        keyboard.controls();
+        generateCurrentCollidable();
+        grid.getScorePanel().hide();
+        grid.getScorePanel().show();
+
+    }
+
+
     public void start() {
+
+        init();
 
         bannerStart.draw();
         pause(5000);
         bannerStart.delete();
-        bannerInstructions.draw();
 
         while (true) {
 
-            while (gameOn) {
+            bannerInstructions.draw();
+
+            System.out.println(gameOn);
+
+
+            if (gameOn) {
+
+
                 bannerInstructions.delete();
 
-                while (!ruben.isDead() && countObjects <= 2) {
+                while (!ruben.isDead() && countObjects <= 5) {
 
                     pause(delay);
                     moveAll();
                 }
 
-
                 if (!ruben.isDead()) {
 
                     startFase2();
                     bannerFase2.draw();
-                    pause(2000);
+                    pause(3000);
                     bannerFase2.delete();
 
                 }
 
-                while (!ruben.isDead() && countObjects <= 4) {
+                while (!ruben.isDead() && countObjects <= 15) {
 
                     pause(delay);
                     moveAll();
@@ -100,19 +110,32 @@ public class Game {
                 if (!ruben.isDead()) {
 
                     startFase3();
-                    bannerFase2.draw();
-                    pause(2000);
-                    bannerFase2.delete();
+                    bannerFase3.draw();
+                    pause(3000);
+                    bannerFase3.delete();
+
 
                 }
 
-                while (!ruben.isDead() && countObjects <= 6) {
+                while (!ruben.isDead() && countObjects <= 30) {
 
                     pause(delay);
                     moveAll();
                 }
 
+                if(!ruben.isDead()){
+                    gameWin.draw();
+                    pause(5000);
+                }
+
                 gameOn = false;
+                countObjects = 0;
+                ruben.setHealth(3);
+                ruben.setSobriety(3);
+                grid.getScorePanel().hide();
+                grid.getScorePanel().reset();
+                grid.getScorePanel().show();
+                ruben.setDead(false);
 
             }
 
@@ -148,7 +171,6 @@ public class Game {
         }
 
         ruben.move();
-
         collisionDetection(ruben);
 
     }
@@ -208,7 +230,6 @@ public class Game {
                     ((rubenMinY <= currentMinY && currentMinY <= rubenMaxY) ||
                             (rubenMinY <= currentMaxY && currentMaxY <= rubenMaxY))) {
 
-
                 currentCollidable.getCollidablePicture().delete();
                 ruben.blink();
 
@@ -234,12 +255,16 @@ public class Game {
 
                         case 0:
                             grid.getScorePanel().getSobrietyEllipse().delete();
+                            break;
 
                     }
 
-
                     if (ruben.getSobriety() == 0) {
                         ruben.setDead(true);
+                        drunk.draw();
+                        pause(3000);
+                        setGameOn(false);
+                        drunk.delete();
                         return;
                     }
 
@@ -254,26 +279,27 @@ public class Game {
                     switch (ruben.getSobriety()) {
 
                         case 2:
-                            grid.getScorePanel().getHealthDisplay().grow(0, -15);
-                            grid.getScorePanel().getHealthDisplay().translate(0, 15);
+                            grid.getScorePanel().getHealthDisplay().grow(0, -16);
+                            grid.getScorePanel().getHealthDisplay().translate(0, 16);
                             break;
 
                         case 1:
-                            grid.getScorePanel().getHealthDisplay().grow(0, -15);
-                            grid.getScorePanel().getHealthDisplay().translate(0, 15);
-
+                            grid.getScorePanel().getHealthDisplay().grow(0, -16);
+                            grid.getScorePanel().getHealthDisplay().translate(0, 16);
                             break;
 
                         case 0:
                             grid.getScorePanel().getHealthEllipse().delete();
+                            break;
 
                     }
 
                     if (ruben.getHealth() == 0) {
                         ruben.setDead(true);
                         vampire.draw();
-
-
+                        pause(3000);
+                        setGameOn(false);
+                        vampire.delete();
                         return;
                     }
 
@@ -282,9 +308,7 @@ public class Game {
 
                 }
 
-
             }
-
 
         }
 
@@ -333,6 +357,9 @@ public class Game {
 
     }
 
+    public void setRun(boolean run) {
+        this.run = run;
+    }
 
     public boolean isGameOn() {
         return gameOn;

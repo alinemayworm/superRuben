@@ -14,7 +14,7 @@ public class GameKeyboard implements KeyboardHandler {
     private Game game;
 
 
-    public GameKeyboard (Ruben ruben, Game game){
+    public GameKeyboard(Ruben ruben, Game game) {
         this.ruben = ruben;
         this.game = game;
 
@@ -39,6 +39,11 @@ public class GameKeyboard implements KeyboardHandler {
         eventStart.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
         k.addEventListener(eventStart);
 
+        KeyboardEvent eventQuit = new KeyboardEvent();
+        eventQuit.setKey(KeyboardEvent.KEY_Q);
+        eventQuit.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
+        k.addEventListener(eventQuit);
+
     }
 
     @Override
@@ -56,6 +61,10 @@ public class GameKeyboard implements KeyboardHandler {
 
             case KeyboardEvent.KEY_SPACE:
                 game.setGameOn(true);
+                break;
+
+            case KeyboardEvent.KEY_Q:
+                game.setRun(false);
                 break;
 
         }

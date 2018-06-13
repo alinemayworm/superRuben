@@ -6,19 +6,18 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 public class RoadStripes extends ScenariumObject {
 
+    private final int PADDING = 10;
 
     private Field grid;
-    int count = 0;
 
     Rectangle[] stripeImage = {
 
-
-            new Rectangle(10 + 0, 10 + 535, 60, 10),
-            new Rectangle(10 + 120, 10 + 535, 60, 10),
-            new Rectangle(10 + 240, 10 + 535, 60, 10),
-            new Rectangle(10 + 360, 10 + 535, 60, 10),
-            new Rectangle(10 + 480, 10 + 535, 60, 10),
-            new Rectangle(10 + 600, 10 + 535, 60, 10),
+            new Rectangle(PADDING , PADDING + 535, 60, 10),
+            new Rectangle(PADDING + 120, PADDING + 535, 60, 10),
+            new Rectangle(PADDING + 240, PADDING + 535, 60, 10),
+            new Rectangle(PADDING + 360, PADDING + 535, 60, 10),
+            new Rectangle(PADDING + 480, PADDING + 535, 60, 10),
+            new Rectangle(PADDING + 600, PADDING + 535, 60, 10),
 
     };
 
@@ -50,7 +49,6 @@ public class RoadStripes extends ScenariumObject {
                 r.fill();
                 grid.getScorePanel().hide();
                 grid.getScorePanel().show();
-
 
             }
 

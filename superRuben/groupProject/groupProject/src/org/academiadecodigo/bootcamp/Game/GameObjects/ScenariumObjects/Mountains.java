@@ -4,6 +4,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Mountains extends ScenariumObject{
 
+    private final int PADDING = 10;
     private Field field;
     private Picture mountainImage;
     int x = 0;
@@ -20,24 +21,24 @@ public class Mountains extends ScenariumObject{
 
             switch(number) {
                 case 1:
-                    this.mountainImage = new Picture(10 + x, 10 + y, "/montanha 1-.png");
+                    this.mountainImage = new Picture(PADDING + x, PADDING + y, "/montanha 1-.png");
                     break;
                 case 2:
-                    this.mountainImage = new Picture(10 + x, 10 + y, "/montanha 2-.png");
+                    this.mountainImage = new Picture(PADDING + x, PADDING + y, "/montanha 2-.png");
                     break;
                 case 3:
-                    this.mountainImage = new Picture(10 + x, 10 + y, "/montanha 3-.png");
+                    this.mountainImage = new Picture(PADDING + x, PADDING + y, "/montanha 3-.png");
                     break;
                 case 4:
-                    this.mountainImage = new Picture(10 + x, 10 + y, "/montanha 4-.png");
+                    this.mountainImage = new Picture(PADDING + x, PADDING + y, "/montanha 4-.png");
                     break;
 
                 case 5:
-                    this.mountainImage = new Picture(10 + x, 10 + y, "/montanha 5-.png");
+                    this.mountainImage = new Picture(PADDING + x, PADDING + y, "/montanha 5-.png");
                     break;
 
                 case 6:
-                    this.mountainImage = new Picture(10 + x, 10 + y, "/montanha 6-.png");
+                    this.mountainImage = new Picture(PADDING + x, PADDING + y, "/montanha 6-.png");
                     break;
             }
 
