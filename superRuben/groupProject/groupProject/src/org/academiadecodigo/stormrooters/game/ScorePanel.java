@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.Game;
+package org.academiadecodigo.stormrooters.game;
 
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Ellipse;
@@ -15,6 +15,7 @@ public class ScorePanel {
     private Ellipse healthEllipse;
     private Rectangle sobrietyDisplay;
     private Ellipse sobrietyEllipse;
+
 
     public ScorePanel() {
 

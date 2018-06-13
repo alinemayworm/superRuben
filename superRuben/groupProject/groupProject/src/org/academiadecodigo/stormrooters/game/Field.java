@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.Game;
+package org.academiadecodigo.stormrooters.game;
 
 
 import org.academiadecodigo.simplegraphics.graphics.Color;

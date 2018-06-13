@@ -1,13 +1,13 @@
-package org.academiadecodigo.bootcamp.Game;
+package org.academiadecodigo.stormrooters.game;
 
-import org.academiadecodigo.bootcamp.Game.GameObjects.Collidables.Beers;
-import org.academiadecodigo.bootcamp.Game.GameObjects.Collidables.Birds;
-import org.academiadecodigo.bootcamp.Game.GameObjects.Collidables.Collidables;
-import org.academiadecodigo.bootcamp.Game.GameObjects.Player.Ruben;
-import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.Clouds;
-import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.Mountains;
-import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.RoadStripes;
-import org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects.ScenariumObject;
+import org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Beer;
+import org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Bat;
+import org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Collidables;
+import org.academiadecodigo.stormrooters.game.GameObjects.Player.Ruben;
+import org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.Clouds;
+import org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.Mountains;
+import org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.RoadStripes;
+import org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.ScenariumObject;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Game {
@@ -35,8 +35,8 @@ public class Game {
     private boolean run = true;
 
     private Collidables currentCollidable;
-    private Collidables bird = new Birds(grid);
-    private Collidables beer = new Beers(grid);
+    private Collidables bat = new Bat(grid);
+    private Collidables beer = new Beer(grid);
 
     private ScenariumObject[] objects = {
 
@@ -78,8 +78,6 @@ public class Game {
 
             bannerInstructions.draw();
 
-            System.out.println(gameOn);
-
 
             if (gameOn) {
 
@@ -96,7 +94,7 @@ public class Game {
 
                     startFase2();
                     bannerFase2.draw();
-                    pause(3000);
+                    pause(5000);
                     bannerFase2.delete();
 
                 }
@@ -111,7 +109,7 @@ public class Game {
 
                     startFase3();
                     bannerFase3.draw();
-                    pause(3000);
+                    pause(5000);
                     bannerFase3.delete();
 
 
@@ -126,10 +124,12 @@ public class Game {
                 if(!ruben.isDead()){
                     gameWin.draw();
                     pause(5000);
+                    gameWin.delete();
                 }
 
                 gameOn = false;
                 countObjects = 0;
+                this.delay = 100;
                 ruben.setHealth(3);
                 ruben.setSobriety(3);
                 grid.getScorePanel().hide();
@@ -177,32 +177,25 @@ public class Game {
 
     public void generateCurrentCollidable() {
 
+
+        System.out.println("now it is being invoked");
         int random = (int) (Math.random() * 2);
 
         switch (random) {
             case 0:
-                this.currentCollidable = new Beers(grid);
-                currentCollidable.setCollidablePicture(beer.getCollidablePicture());
-                currentCollidable.setCurrent(true);
-                currentCollidable.setCrashed(false);
-                currentCollidable.getCollidablePicture().draw();
-                currentCollidable.setPosition(currentCollidable.getMinX(), currentCollidable.getMinY(), currentCollidable.getMaxX(), currentCollidable.getMaxY());
-                grid.getScorePanel().hide();
-                grid.getScorePanel().show();
+                this.currentCollidable = beer;
                 break;
 
             case 1:
-                this.currentCollidable = new Birds(grid);
-                currentCollidable.setCollidablePicture(bird.getCollidablePicture());
-                currentCollidable.setCurrent(true);
-                currentCollidable.setCrashed(false);
-                currentCollidable.getCollidablePicture().draw();
-                currentCollidable.setPosition(currentCollidable.getMinX(), currentCollidable.getMinY(), currentCollidable.getMaxX(), currentCollidable.getMaxY());
-                grid.getScorePanel().hide();
-                grid.getScorePanel().show();
+                this.currentCollidable = bat;
                 break;
-
         }
+
+        System.out.println(currentCollidable);
+
+        currentCollidable.reset();
+        grid.getScorePanel().hide();
+        grid.getScorePanel().show();
 
         countObjects++;
 
@@ -236,7 +229,7 @@ public class Game {
                 System.out.println(countObjects);
 
 
-                if (currentCollidable instanceof Beers) {
+                if (currentCollidable instanceof Beer) {
                     generateCurrentCollidable();
                     ruben.setSobriety(ruben.getSobriety() - 1);
 
@@ -260,11 +253,7 @@ public class Game {
                     }
 
                     if (ruben.getSobriety() == 0) {
-                        ruben.setDead(true);
-                        drunk.draw();
-                        pause(3000);
-                        setGameOn(false);
-                        drunk.delete();
+                        lose(drunk);
                         return;
                     }
 
@@ -273,19 +262,25 @@ public class Game {
                 }
 
 
-                if (currentCollidable instanceof Birds) {
+                if (currentCollidable instanceof Bat) {
                     generateCurrentCollidable();
                     ruben.setHealth(ruben.getHealth() - 1);
-                    switch (ruben.getSobriety()) {
+
+                    switch (ruben.getHealth()) {
 
                         case 2:
+                            grid.getScorePanel().hide();
                             grid.getScorePanel().getHealthDisplay().grow(0, -16);
+                            System.out.println("I entered here!!!");
                             grid.getScorePanel().getHealthDisplay().translate(0, 16);
+                            grid.getScorePanel().show();
                             break;
 
                         case 1:
+                            grid.getScorePanel().hide();
                             grid.getScorePanel().getHealthDisplay().grow(0, -16);
                             grid.getScorePanel().getHealthDisplay().translate(0, 16);
+                            grid.getScorePanel().show();
                             break;
 
                         case 0:
@@ -295,11 +290,7 @@ public class Game {
                     }
 
                     if (ruben.getHealth() == 0) {
-                        ruben.setDead(true);
-                        vampire.draw();
-                        pause(3000);
-                        setGameOn(false);
-                        vampire.delete();
+                        lose(vampire);
                         return;
                     }
 
@@ -312,6 +303,14 @@ public class Game {
 
         }
 
+    }
+
+    private void lose(Picture picture) {
+        ruben.setDead(true);
+        picture.draw();
+        pause(3000);
+        setGameOn(false);
+        picture.delete();
     }
 
     public void startFase2() {

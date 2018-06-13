@@ -1,7 +1,7 @@
-package org.academiadecodigo.bootcamp.Game.GameObjects.Player;
+package org.academiadecodigo.stormrooters.game.GameObjects.Player;
 
-import org.academiadecodigo.bootcamp.Game.Field;
-import org.academiadecodigo.bootcamp.Game.GameObjects.Movable;
+import org.academiadecodigo.stormrooters.game.Field;
+import org.academiadecodigo.stormrooters.game.GameObjects.Movable;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Ruben implements Movable {

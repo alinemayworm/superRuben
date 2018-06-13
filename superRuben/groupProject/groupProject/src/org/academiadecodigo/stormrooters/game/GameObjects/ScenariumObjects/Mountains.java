@@ -1,5 +1,5 @@
-package org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects;
-import org.academiadecodigo.bootcamp.Game.Field;
+package org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects;
+import org.academiadecodigo.stormrooters.game.Field;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Mountains extends ScenariumObject{

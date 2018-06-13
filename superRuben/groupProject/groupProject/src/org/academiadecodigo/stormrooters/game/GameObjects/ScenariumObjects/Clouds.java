@@ -1,7 +1,5 @@
-package org.academiadecodigo.bootcamp.Game.GameObjects.ScenariumObjects;
-import org.academiadecodigo.bootcamp.Game.Field;
-import org.academiadecodigo.simplegraphics.graphics.Color;
-import org.academiadecodigo.simplegraphics.graphics.Rectangle;
+package org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects;
+import org.academiadecodigo.stormrooters.game.Field;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Clouds extends ScenariumObject {

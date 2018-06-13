@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.Game;
+package org.academiadecodigo.stormrooters.game;
 
 public class SuperGame {
     public static void main(String[] args) {

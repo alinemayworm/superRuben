@@ -1,6 +1,6 @@
-package org.academiadecodigo.bootcamp.Game;
+package org.academiadecodigo.stormrooters.game;
 
-import org.academiadecodigo.bootcamp.Game.GameObjects.Player.Ruben;
+import org.academiadecodigo.stormrooters.game.GameObjects.Player.Ruben;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 
