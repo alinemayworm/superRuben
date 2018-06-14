@@ -32,8 +32,6 @@ public class Game {
     private int delay = 75;
     private int countObjects = 0;
 
-    private GameKeyboard keyboard;
-
     private Ruben ruben = new Ruben(grid);
 
     private boolean gameOn = false;
@@ -58,10 +56,12 @@ public class Game {
     };
 
 
+    private GameKeyboard keyboard = new GameKeyboard(ruben, this);
+
+
     public void init() {
 
         grid.getScorePanel().show();
-        keyboard = new GameKeyboard(ruben, this);
         keyboard.controls();
         generateCurrentCollidable();
         grid.getScorePanel().hide();
@@ -88,11 +88,11 @@ public class Game {
 
                 bannerInstructions.delete();
 
+                music.loopIndef();
+                music.play(true);
 
                 while (!ruben.isDead() && countObjects <= 12) {
 
-                    //music.loopIndef();
-                    //music.play(true);
                     pause(delay);
                     moveAll();
                 }
@@ -100,36 +100,36 @@ public class Game {
 
                 if (!ruben.isDead()) {
 
-
+                    music.stop();
                     startFase(50, nightSky);
                     bannerFase2.draw();
                     pause(5000);
                     bannerFase2.delete();
+                    music.loopIndef();
+                    music.play(true);
 
                 }
 
                 while (!ruben.isDead() && countObjects <= 28) {
 
-                    //music.loopIndef();
-                    //music.play(true);
                     pause(delay);
                     moveAll();
                 }
 
                 if (!ruben.isDead()) {
 
+                    music.stop();
                     startFase(25, daySky);
                     bannerFase3.draw();
                     pause(5000);
                     bannerFase3.delete();
+                    music.loopIndef();
+                    music.play(true);
 
 
                 }
 
                 while (!ruben.isDead() && countObjects <= 48) {
-
-                    //music.loopIndef();
-                    //music.play(true);
 
                     pause(delay);
                     moveAll();
@@ -139,17 +139,16 @@ public class Game {
                     music.stop();
                     endSound.play(true);
                     gameWin.draw();
-                    pause(7000);
+                    pause(5000);
                     endSound.stop();
                     gameWin.delete();
 
-
                 }
+
+                gameOn = false;
                 resetGame();
-                break;
+
             }
-
-
 
         }
 
@@ -347,8 +346,9 @@ public class Game {
     public void resetGame() {
 
         countObjects = 0;
+        ruben.setDead(false);
         startFase(75, daySky);
-        setGameOn(false);
+        gameOn = false;
 
     }
 
