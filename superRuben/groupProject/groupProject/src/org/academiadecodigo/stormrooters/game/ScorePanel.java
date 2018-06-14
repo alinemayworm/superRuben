@@ -62,8 +62,6 @@ public class ScorePanel {
         sobrietyEllipse = new Ellipse(657,396,22,22);
         sobrietyEllipse.setColor(Color.YELLOW);
         sobrietyEllipse.fill();
-
-        System.out.println("reseted!");
     }
 
 

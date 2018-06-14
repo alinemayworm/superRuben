@@ -17,14 +17,19 @@ public class Game {
     private Picture bannerStart = new Picture(10, 10, "/banner start.png");
     private Picture bannerInstructions = new Picture(10, 10, "/banner instructions.png");
     private Picture vampire = new Picture(10, 10, "/backgroundVampire.png");
-    private Picture drunk = new Picture(10,10,"/backgroundBeer.jpg");
+    private Picture drunk = new Picture(10, 10, "/backgroundBeer.jpg");
     private Picture bannerFase2 = new Picture(10, 10, "/bannerFase2.png");
-    private Picture bannerFase3 = new Picture(10,10,"/bannerFase3.png");
+    private Picture bannerFase3 = new Picture(10, 10, "/bannerFase3.png");
     private Picture nightSky = new Picture(10, 10, "/nightsky.png");
     private Picture daySky = new Picture(10, 10, "/bgsky.jpg");
-    private Picture gameWin = new Picture(10,10,"/gameWin.png");
+    private Picture gameWin = new Picture(10, 10, "/gameWin.png");
+    private Sound music = new Sound("/BossMain.wav");
+    private Sound vampireSound = new Sound("/Evil Laugh.wav");
+    private Sound beerSound = new Sound("/beerSound.wav");
+    private Sound endSound = new Sound("/fim.wav");
 
-    private int delay = 100;
+
+    private int delay = 75;
     private int countObjects = 0;
 
     private GameKeyboard keyboard;
@@ -32,7 +37,6 @@ public class Game {
     private Ruben ruben = new Ruben(grid);
 
     private boolean gameOn = false;
-    private boolean run = true;
 
     private Collidables currentCollidable;
     private Collidables bat = new Bat(grid);
@@ -63,6 +67,7 @@ public class Game {
         grid.getScorePanel().hide();
         grid.getScorePanel().show();
 
+
     }
 
 
@@ -71,43 +76,49 @@ public class Game {
         init();
 
         bannerStart.draw();
-        pause(5000);
+        pause(4000);
         bannerStart.delete();
 
         while (true) {
 
             bannerInstructions.draw();
-
+            System.out.println(gameOn);
 
             if (gameOn) {
 
-
                 bannerInstructions.delete();
 
-                while (!ruben.isDead() && countObjects <= 5) {
 
+                while (!ruben.isDead() && countObjects <= 12) {
+
+                    //music.loopIndef();
+                    //music.play(true);
                     pause(delay);
                     moveAll();
                 }
 
+
                 if (!ruben.isDead()) {
 
-                    startFase2();
+
+                    startFase(50, nightSky);
                     bannerFase2.draw();
                     pause(5000);
                     bannerFase2.delete();
 
                 }
 
-                while (!ruben.isDead() && countObjects <= 15) {
+                while (!ruben.isDead() && countObjects <= 28) {
 
+                    //music.loopIndef();
+                    //music.play(true);
                     pause(delay);
                     moveAll();
                 }
 
                 if (!ruben.isDead()) {
 
-                    startFase3();
+                    startFase(25, daySky);
                     bannerFase3.draw();
                     pause(5000);
                     bannerFase3.delete();
@@ -115,29 +126,30 @@ public class Game {
 
                 }
 
-                while (!ruben.isDead() && countObjects <= 30) {
+                while (!ruben.isDead() && countObjects <= 48) {
+
+                    //music.loopIndef();
+                    //music.play(true);
 
                     pause(delay);
                     moveAll();
                 }
 
-                if(!ruben.isDead()){
+                if (!ruben.isDead()) {
+                    music.stop();
+                    endSound.play(true);
                     gameWin.draw();
-                    pause(5000);
+                    pause(7000);
+                    endSound.stop();
                     gameWin.delete();
+
+
                 }
-
-                gameOn = false;
-                countObjects = 0;
-                this.delay = 100;
-                ruben.setHealth(3);
-                ruben.setSobriety(3);
-                grid.getScorePanel().hide();
-                grid.getScorePanel().reset();
-                grid.getScorePanel().show();
-                ruben.setDead(false);
-
+                resetGame();
+                break;
             }
+
+
 
         }
 
@@ -177,8 +189,6 @@ public class Game {
 
     public void generateCurrentCollidable() {
 
-
-        System.out.println("now it is being invoked");
         int random = (int) (Math.random() * 2);
 
         switch (random) {
@@ -191,7 +201,6 @@ public class Game {
                 break;
         }
 
-        System.out.println(currentCollidable);
 
         currentCollidable.reset();
         grid.getScorePanel().hide();
@@ -226,8 +235,6 @@ public class Game {
                 currentCollidable.getCollidablePicture().delete();
                 ruben.blink();
 
-                System.out.println(countObjects);
-
 
                 if (currentCollidable instanceof Beer) {
                     generateCurrentCollidable();
@@ -253,11 +260,13 @@ public class Game {
                     }
 
                     if (ruben.getSobriety() == 0) {
+                        beerSound.play(true);
                         lose(drunk);
+                        gameOn = false;
                         return;
                     }
 
-                    System.out.println("ruben sobriety is now " + ruben.getSobriety());
+
                     return;
                 }
 
@@ -271,7 +280,7 @@ public class Game {
                         case 2:
                             grid.getScorePanel().hide();
                             grid.getScorePanel().getHealthDisplay().grow(0, -16);
-                            System.out.println("I entered here!!!");
+
                             grid.getScorePanel().getHealthDisplay().translate(0, 16);
                             grid.getScorePanel().show();
                             break;
@@ -290,11 +299,12 @@ public class Game {
                     }
 
                     if (ruben.getHealth() == 0) {
+
+                        vampireSound.play(true);
                         lose(vampire);
+                        gameOn = false;
                         return;
                     }
-
-                    System.out.println("ruben health is now " + ruben.getHealth());
 
 
                 }
@@ -305,6 +315,7 @@ public class Game {
 
     }
 
+
     private void lose(Picture picture) {
         ruben.setDead(true);
         picture.draw();
@@ -313,16 +324,16 @@ public class Game {
         picture.delete();
     }
 
-    public void startFase2() {
+    public void startFase(int delay, Picture picture) {
 
-        this.delay = 75;
+        this.delay = delay;
         ruben.setSobriety(3);
         ruben.setHealth(3);
-        grid.getScorePanel().reset();
         grid.getScorePanel().hide();
+        grid.getScorePanel().reset();
         grid.getScorePanel().show();
         grid.getField().delete();
-        grid.setField(nightSky);
+        grid.setField(picture);
         grid.getField().draw();
         grid.getRoad().delete();
         grid.getRoad().fill();
@@ -331,38 +342,16 @@ public class Game {
             s.show();
         }
 
+    }
+
+    public void resetGame() {
+
+        countObjects = 0;
+        startFase(75, daySky);
+        setGameOn(false);
 
     }
 
-
-    public void startFase3() {
-
-        this.delay = 50;
-        ruben.setSobriety(3);
-        ruben.setHealth(3);
-        grid.getScorePanel().reset();
-        grid.getScorePanel().hide();
-        grid.getScorePanel().show();
-        grid.getField().delete();
-        grid.setField(daySky);
-        grid.getField().draw();
-        grid.getRoad().delete();
-        grid.getRoad().fill();
-
-        for (ScenariumObject s : objects) {
-            s.show();
-        }
-
-
-    }
-
-    public void setRun(boolean run) {
-        this.run = run;
-    }
-
-    public boolean isGameOn() {
-        return gameOn;
-    }
 
     public void setGameOn(boolean on) {
         this.gameOn = on;

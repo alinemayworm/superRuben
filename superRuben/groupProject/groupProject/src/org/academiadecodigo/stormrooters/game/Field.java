@@ -34,7 +34,7 @@ public class Field {
     }
 
     /**
-     *
+     *<
      * @return
      */
     public ScorePanel getScorePanel(){

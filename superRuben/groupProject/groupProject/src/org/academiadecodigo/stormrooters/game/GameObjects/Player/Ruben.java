@@ -9,10 +9,8 @@ public class Ruben implements Movable {
     private boolean jumping;
     private boolean down;
     private boolean dead;
-private boolean blinking;
+    private boolean blinking;
 
-
-private int countBlinks = 0;
     private int countJumps = 0;
     private int countDown = 0;
 
@@ -27,8 +25,8 @@ private int countBlinks = 0;
     private Picture walk2 = new Picture(60, 415, "/walk2.png");
     private Picture walk3 = new Picture(60, 415, "/walk3.png");
     private Picture walk4 = new Picture(60, 415, "/walk4.png");
-
     private Picture walkDown = new Picture(60, 445, "/down.png");
+
 
 
     public Ruben(Field field) {

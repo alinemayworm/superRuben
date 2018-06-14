@@ -39,11 +39,6 @@ public class GameKeyboard implements KeyboardHandler {
         eventStart.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
         k.addEventListener(eventStart);
 
-        KeyboardEvent eventQuit = new KeyboardEvent();
-        eventQuit.setKey(KeyboardEvent.KEY_Q);
-        eventQuit.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
-        k.addEventListener(eventQuit);
-
     }
 
     @Override
@@ -61,10 +56,6 @@ public class GameKeyboard implements KeyboardHandler {
 
             case KeyboardEvent.KEY_SPACE:
                 game.setGameOn(true);
-                break;
-
-            case KeyboardEvent.KEY_Q:
-                game.setRun(false);
                 break;
 
         }

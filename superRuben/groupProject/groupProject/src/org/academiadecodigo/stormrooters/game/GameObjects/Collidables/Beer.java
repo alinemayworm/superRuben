@@ -5,7 +5,7 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Beer extends Collidables {
 
-    private Picture beerImage = new Picture(610, 465, "/beer1.png");
+    private Picture beerImage = new Picture(610, 485, "/beer1.png");
     private Field grid;
 
     public Beer(Field grid) {
