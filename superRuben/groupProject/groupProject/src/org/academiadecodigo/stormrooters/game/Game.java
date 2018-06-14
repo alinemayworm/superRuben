@@ -58,7 +58,11 @@ public class Game {
 
     private GameKeyboard keyboard = new GameKeyboard(ruben, this);
 
-
+    /**
+     * Initiates the game.
+     * Generates the grid, the score panel,
+     * keyboard controls and the current collidable
+     */
     public void init() {
 
         grid.getScorePanel().show();
@@ -70,7 +74,11 @@ public class Game {
 
     }
 
-
+    /**
+     * Show loading banner,
+     * Insert music,
+     *
+     */
     public void start() {
 
         init();
@@ -82,7 +90,7 @@ public class Game {
         while (true) {
 
             bannerInstructions.draw();
-            System.out.println(gameOn);
+        //    System.out.println(gameOn);
 
             if (gameOn) {
 
@@ -103,6 +111,8 @@ public class Game {
                     music.stop();
                     startFase(50, nightSky);
                     bannerFase2.draw();
+                    grid.getfieldBorder().delete();
+                    grid.getfieldBorder().fill();
                     pause(5000);
                     bannerFase2.delete();
                     music.loopIndef();
@@ -121,6 +131,8 @@ public class Game {
                     music.stop();
                     startFase(25, daySky);
                     bannerFase3.draw();
+                    grid.getfieldBorder().delete();
+                    grid.getfieldBorder().fill();
                     pause(5000);
                     bannerFase3.delete();
                     music.loopIndef();
@@ -139,6 +151,8 @@ public class Game {
                     music.stop();
                     endSound.play(true);
                     gameWin.draw();
+                    grid.getfieldBorder().delete();
+                    grid.getfieldBorder().fill();
                     pause(5000);
                     endSound.stop();
                     gameWin.delete();
@@ -259,6 +273,7 @@ public class Game {
                     }
 
                     if (ruben.getSobriety() == 0) {
+                        music.stop();
                         beerSound.play(true);
                         lose(drunk);
                         gameOn = false;
@@ -298,7 +313,7 @@ public class Game {
                     }
 
                     if (ruben.getHealth() == 0) {
-
+                        music.stop();
                         vampireSound.play(true);
                         lose(vampire);
                         gameOn = false;

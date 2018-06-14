@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/Game.java" line="353" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/Game.java" line="362" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41c8ae97-41f2-4136-9a47-a44278c5ae96" name="Default" comment="" />
@@ -13,119 +13,32 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/superRuben$SuperGame.ic" NAME="SuperGame Coverage Results" MODIFIED="1528909640100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>org.academiadecodigo.bootcamp.Game.*</FILTER>
-    </SUITE>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameKeyboard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/GameKeyboard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-            </state>
-          </provider>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1187">
-              <caret line="137" column="38" lean-forward="true" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="38" />
+            <state relative-caret-position="-2589">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#9917#9918#0" expanded="true" />
-                <element signature="e#9949#9950#0" expanded="true" />
+                <element signature="e#10187#10188#0" expanded="true" />
+                <element signature="e#10219#10220#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ruben.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/GameObjects/Player/Ruben.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1186">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="e#3528#3529#0" expanded="true" />
-                <element signature="e#3555#3556#0" expanded="true" />
-                <element signature="e#3596#3597#0" expanded="true" />
-                <element signature="e#3628#3629#0" expanded="true" />
-                <element signature="e#4037#4038#0" expanded="true" />
-                <element signature="e#4077#4078#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Collidables.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/GameObjects/Collidables/Collidables.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bat.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/GameObjects/Collidables/Bat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sound.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/Sound.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-              <folding>
-                <element signature="e#809#810#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Field.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/Field.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScenariumObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/GameObjects/ScenariumObjects/ScenariumObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Clouds.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/GameObjects/ScenariumObjects/Clouds.java">
+      <file leaf-file-name="SuperGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/SuperGame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScorePanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/ScorePanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -141,6 +54,9 @@
       <find>System</find>
       <find>Sys</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -178,9 +94,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="62" />
+    <option name="x" value="258" />
     <option name="y" value="23" />
-    <option name="width" value="1238" />
+    <option name="width" value="1423" />
     <option name="height" value="977" />
   </component>
   <component name="ProjectView">
@@ -188,18 +104,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="superRuben" type="b2602c69:ProjectViewProjectNode" />
               <item name="groupProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="superRuben" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupProject" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="superRuben" type="b2602c69:ProjectViewProjectNode" />
@@ -232,20 +145,10 @@
               <item name="GameObjects" type="462c0819:PsiDirectoryNode" />
               <item name="Collidables" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="superRuben" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="GameObjects" type="462c0819:PsiDirectoryNode" />
-              <item name="Player" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,7 +273,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44297000" />
+    <option name="totallyTimeSpent" value="48058000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -382,7 +285,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="23" width="1238" height="977" extended-state="0" />
+    <frame x="258" y="23" width="1423" height="977" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -395,25 +298,46 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3272727" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32954547" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32954547" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19648829" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31716147" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Coverage" order="3" side_tool="true" weight="0.32946917" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Designer" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" weight="0.32946917" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3272727" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19648829" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,15 +377,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/GameObjects/Collidables/Beer.java" />
-    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/bootcamp/Game/Game.java" />
-    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/Sound.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/GameObjects/ScenariumObjects/Mountains.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -489,8 +404,8 @@
           <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9917#9918#0" expanded="true" />
-            <element signature="e#9949#9950#0" expanded="true" />
+            <element signature="e#10187#10188#0" expanded="true" />
+            <element signature="e#10219#10220#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -685,33 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/org.academiadecodigo.stormrooters.game">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>org.academiadecodigo.stormrooters.game</OriginalElement>
-          <nodes>
-            <node x="" y="">org.academiadecodigo.stormrooters.game.GameObjects</node>
-            <node x="" y="">org.academiadecodigo.stormrooters.game.Game</node>
-            <node x="" y="">org.academiadecodigo.stormrooters.game.SuperGame</node>
-            <node x="" y="">org.academiadecodigo.stormrooters.game.Field</node>
-            <node x="" y="">org.academiadecodigo.stormrooters.game.ScorePanel</node>
-            <node x="" y="">org.academiadecodigo.stormrooters.game.GameKeyboard</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="361.0" y="126.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/src.zip!/javax/sound/sampled/Clip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1751">
@@ -723,13 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/SuperGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -832,14 +713,243 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/groupProject/groupProject/lib/simplegraphics.jar!/org/academiadecodigo/simplegraphics/pictures/Picture.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.academiadecodigo.stormrooters.game">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.academiadecodigo.stormrooters.game</OriginalElement>
+          <nodes>
+            <node x="718.5063945578232" y="218.0">org.academiadecodigo.stormrooters.game.GameObjects.Player.Ruben</node>
+            <node x="112.0" y="218.0">org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.ScenariumObject</node>
+            <node x="595.795068027211" y="307.0">org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Bat</node>
+            <node x="599.621700680272" y="476.0">org.academiadecodigo.stormrooters.game.Game</node>
+            <node x="581.621700680272" y="555.0">org.academiadecodigo.stormrooters.game.SuperGame</node>
+            <node x="517.545068027211" y="218.0">org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Collidables</node>
+            <node x="481.0" y="307.0">org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Beer</node>
+            <node x="0.0" y="307.0">org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.Clouds</node>
+            <node x="685.795068027211" y="307.0">org.academiadecodigo.stormrooters.game.GameKeyboard</node>
+            <node x="206.0" y="307.0">org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.RoadStripes</node>
+            <node x="348.0" y="307.0">org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.Mountains</node>
+            <node x="856.795068027211" y="307.0">org.academiadecodigo.stormrooters.game.Sound</node>
+            <node x="525.045068027211" y="79.0">org.academiadecodigo.stormrooters.game.GameObjects.Movable</node>
+            <node x="407.40221088435385" y="79.0">org.academiadecodigo.stormrooters.game.Field</node>
+            <node x="387.40221088435385" y="0.0">org.academiadecodigo.stormrooters.game.ScorePanel</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.academiadecodigo.stormrooters.game.GameKeyboard" target="org.academiadecodigo.stormrooters.game.GameObjects.Player.Ruben">
+              <point x="-35.5" y="-14.5" />
+              <point x="721.295068027211" y="287.0" />
+              <point x="744.6063945578233" y="287.0" />
+              <point x="-17.400000000000006" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.Mountains" target="org.academiadecodigo.stormrooters.game.Field">
+              <point x="37.666666666666686" y="-14.5" />
+              <point x="-2.7142857142857224" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.Game" target="org.academiadecodigo.stormrooters.game.GameObjects.Player.Ruben">
+              <point x="23.714285714285722" y="-14.5" />
+              <point x="664.8359863945578" y="416.0" />
+              <point x="838.34268707483" y="416.0" />
+              <point x="838.34268707483" y="277.0" />
+              <point x="779.4063945578232" y="277.0" />
+              <point x="17.399999999999977" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.Game" target="org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Bat">
+              <point x="-3.952380952380963" y="-14.5" />
+              <point x="637.1693197278911" y="366.0" />
+              <point x="613.045068027211" y="366.0" />
+              <point x="-17.25" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameKeyboard" target="org.academiadecodigo.stormrooters.game.Game">
+              <point x="17.75" y="14.5" />
+              <point x="774.545068027211" y="396.0" />
+              <point x="656.9312244897959" y="396.0" />
+              <point x="15.809523809523796" y="-14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.Game" target="org.academiadecodigo.stormrooters.game.GameKeyboard">
+              <point x="11.85714285714289" y="-14.5" />
+              <point x="652.978843537415" y="386.0" />
+              <point x="739.045068027211" y="386.0" />
+              <point x="-17.75" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Beer" target="org.academiadecodigo.stormrooters.game.Field">
+              <point x="-28.5" y="-14.5" />
+              <point x="490.5" y="287.0" />
+              <point x="447.7109863945578" y="287.0" />
+              <point x="2.7142857142857224" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.Game" target="org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.RoadStripes">
+              <point x="-23.714285714285666" y="-14.5" />
+              <point x="617.4074149659864" y="416.0" />
+              <point x="267.0" y="416.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.Clouds" target="org.academiadecodigo.stormrooters.game.Field">
+              <point x="-30.33333333333337" y="-14.5" />
+              <point x="15.166666666666629" y="287.0" />
+              <point x="26.378401360544274" y="287.0" />
+              <point x="26.378401360544274" y="138.0" />
+              <point x="410.1164965986395" y="138.0" />
+              <point x="-35.28571428571428" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.Game" target="org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.Mountains">
+              <point x="-19.761904761904702" y="-14.5" />
+              <point x="621.3597959183674" y="406.0" />
+              <point x="404.5" y="406.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.SuperGame" target="org.academiadecodigo.stormrooters.game.Game">
+              <point x="29.75" y="-14.5" />
+              <point x="670.871700680272" y="530.0" />
+              <point x="661.871700680272" y="530.0" />
+              <point x="20.75" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.Game" target="org.academiadecodigo.stormrooters.game.Field">
+              <point x="-35.571428571428555" y="-14.5" />
+              <point x="605.5502721088435" y="446.0" />
+              <point x="101.5" y="446.0" />
+              <point x="101.5" y="158.0" />
+              <point x="420.9736394557824" y="158.0" />
+              <point x="-24.428571428571445" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.Field" target="org.academiadecodigo.stormrooters.game.ScorePanel">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.Clouds" target="org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.ScenariumObject">
+              <point x="30.33333333333337" y="-14.5" />
+              <point x="75.83333333333337" y="287.0" />
+              <point x="127.19999999999999" y="287.0" />
+              <point x="-60.80000000000001" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameObjects.Player.Ruben" target="org.academiadecodigo.stormrooters.game.GameObjects.Movable">
+              <point x="29.0" y="-14.5" />
+              <point x="791.0063945578232" y="138.0" />
+              <point x="607.545068027211" y="138.0" />
+              <point x="33.0" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Bat" target="org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Collidables">
+              <point x="-25.875" y="-14.5" />
+              <point x="604.420068027211" y="287.0" />
+              <point x="597.3450680272109" y="287.0" />
+              <point x="22.799999999999983" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.Game" target="org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.ScenariumObject">
+              <point x="-27.66666666666663" y="-14.5" />
+              <point x="613.4550340136054" y="426.0" />
+              <point x="174.7761904761905" y="426.0" />
+              <point x="174.7761904761905" y="287.0" />
+              <point x="188.0" y="287.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.Game" target="org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Collidables">
+              <point x="-7.90476190476187" y="-14.5" />
+              <point x="633.2169387755102" y="376.0" />
+              <point x="574.545068027211" y="376.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Bat" target="org.academiadecodigo.stormrooters.game.Field">
+              <point x="8.625" y="-14.5" />
+              <point x="638.920068027211" y="287.0" />
+              <point x="642.045068027211" y="287.0" />
+              <point x="642.045068027211" y="178.0" />
+              <point x="458.9736394557824" y="178.0" />
+              <point x="13.571428571428555" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.ScenariumObject" target="org.academiadecodigo.stormrooters.game.GameObjects.Movable">
+              <point x="5.6843418860808015E-14" y="-14.5" />
+              <point x="188.00000000000006" y="198.0" />
+              <point x="541.545068027211" y="198.0" />
+              <point x="-33.0" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.Mountains" target="org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.ScenariumObject">
+              <point x="-37.666666666666686" y="-14.5" />
+              <point x="366.8333333333333" y="277.0" />
+              <point x="248.8" y="277.0" />
+              <point x="60.80000000000001" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Collidables" target="org.academiadecodigo.stormrooters.game.GameObjects.Movable">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.Game" target="org.academiadecodigo.stormrooters.game.Sound">
+              <point x="35.571428571428555" y="-14.5" />
+              <point x="676.6931292517006" y="446.0" />
+              <point x="878.795068027211" y="446.0" />
+              <point x="-22.0" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.RoadStripes" target="org.academiadecodigo.stormrooters.game.Field">
+              <point x="40.66666666666663" y="-14.5" />
+              <point x="307.86156462585024" y="178.0" />
+              <point x="431.8307823129253" y="178.0" />
+              <point x="-13.571428571428555" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.Game" target="org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.Clouds">
+              <point x="-39.52380952380946" y="-14.5" />
+              <point x="601.5978911564627" y="456.0" />
+              <point x="45.5" y="456.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.Game" target="org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Beer">
+              <point x="-15.809523809523796" y="-14.5" />
+              <point x="625.3121768707483" y="396.0" />
+              <point x="500.0" y="396.0" />
+              <point x="-19.0" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameObjects.Player.Ruben" target="org.academiadecodigo.stormrooters.game.Field">
+              <point x="0.0" y="-14.5" />
+              <point x="762.0063945578232" y="148.0" />
+              <point x="475.25935374149674" y="148.0" />
+              <point x="29.85714285714289" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.RoadStripes" target="org.academiadecodigo.stormrooters.game.GameObjects.ScenariumObjects.ScenariumObject">
+              <point x="-40.66666666666663" y="-14.5" />
+              <point x="226.33333333333337" y="287.0" />
+              <point x="218.40000000000003" y="287.0" />
+              <point x="30.400000000000034" y="14.5" />
+            </edge>
+            <edge source="org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Beer" target="org.academiadecodigo.stormrooters.game.GameObjects.Collidables.Collidables">
+              <point x="9.5" y="-14.5" />
+              <point x="-45.6" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.1" x="59.850649350649206" y="212.18181818181816" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/groupProject.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/SuperGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1187">
-          <caret line="137" column="38" lean-forward="true" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="38" />
+        <state relative-caret-position="-2589">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9917#9918#0" expanded="true" />
-            <element signature="e#9949#9950#0" expanded="true" />
+            <element signature="e#10187#10188#0" expanded="true" />
+            <element signature="e#10219#10220#0" expanded="true" />
           </folding>
         </state>
       </provider>
