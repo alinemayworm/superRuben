@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/Game.java" line="357" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/Game.java" line="353" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41c8ae97-41f2-4136-9a47-a44278c5ae96" name="Default" comment="" />
@@ -32,11 +32,11 @@
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3822">
-              <caret line="349" lean-forward="true" selection-start-line="349" selection-end-line="349" />
+            <state relative-caret-position="-2658">
+              <caret line="141" column="32" lean-forward="true" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
               <folding>
-                <element signature="e#9847#9848#0" expanded="true" />
-                <element signature="e#9879#9880#0" expanded="true" />
+                <element signature="e#9909#9910#0" expanded="true" />
+                <element signature="e#9941#9942#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,7 +101,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="30" />
     <option name="y" value="49" />
-    <option name="width" value="1866" />
+    <option name="width" value="1238" />
     <option name="height" value="977" />
   </component>
   <component name="ProjectView">
@@ -273,7 +273,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40524000" />
+    <option name="totallyTimeSpent" value="40781000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -285,8 +285,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="49" width="1866" height="977" extended-state="0" />
-    <editor active="true" />
+    <frame x="30" y="49" width="1238" height="977" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32954547" />
@@ -297,13 +296,13 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32954547" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3286026" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32954547" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32954547" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34155703" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.520903" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -406,8 +405,8 @@
         <state relative-caret-position="-407">
           <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
           <folding>
-            <element signature="e#9847#9848#0" expanded="true" />
-            <element signature="e#9879#9880#0" expanded="true" />
+            <element signature="e#9909#9910#0" expanded="true" />
+            <element signature="e#9941#9942#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -766,11 +765,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/groupProject/groupProject/src/org/academiadecodigo/stormrooters/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3822">
-          <caret line="349" lean-forward="true" selection-start-line="349" selection-end-line="349" />
+        <state relative-caret-position="-2658">
+          <caret line="141" column="32" lean-forward="true" selection-start-line="141" selection-start-column="32" selection-end-line="141" selection-end-column="32" />
           <folding>
-            <element signature="e#9847#9848#0" expanded="true" />
-            <element signature="e#9879#9880#0" expanded="true" />
+            <element signature="e#9909#9910#0" expanded="true" />
+            <element signature="e#9941#9942#0" expanded="true" />
           </folding>
         </state>
       </provider>
